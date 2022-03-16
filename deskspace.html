@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Deskspace Case Study</title>
+      <link rel="stylesheet" href="styles/reset.css">
+      <link rel="stylesheet" href="styles/style.css">
+      <link rel="stylesheet" href="https://use.typekit.net/gim3wyn.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+     <div class = "deskspace">
+
+       <div class="topnav mobile-only">
+           <a href="index.html" id="mmb"><img class="mobile-nav-logo" src="assets/images/maddie_logo.png" alt="my logo"></a>
+           <div id="myLinks">
+             <a href="about.html">About</a>
+             <a href="assets/Mbrooks_Resume_20.pdf" target="_blank"><img class="resume-icon" src="assets/images/open_new_win_transparent.png" alt="open in new window">Resume</a>
+             <a href="contact.html">Contact</a>
+           </div>
+           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+             <i class="fa fa-bars"></i>
+           </a>
+       </div>
+
+        <!-- logo and nav menu -->
+
+        <div class ="header grid-no-margin full-width">
+
+             <a href="index.html"><img id="mylogo" src="assets/images/maddie_logo.png" alt="my logo"></a>
+
+             <ul class="navigation">
+               <li><a href="about.html">About</a></li>
+               <li><a href="assets/Mbrooks_Resume_20.pdf" target="_blank"><img class="resume-icon" src="assets/images/open_new_win_transparent.png" alt="open in new window">Resume</a></li>
+               <li><a href="contact.html">Contact</a></li>
+             </ul>
+
+            <!-- app title with prototype button &amp; description -->
+            <div class = "header-main-content grid-no-margin full-width">
+               <h1 class = "full-width">DeskSpace</h1>
+               <a class="prototype-btn" href="https://www.figma.com/proto/F4c5q9e1Ufy9gDKAg6gUvH/DeskSpace-Prototype-Final-and-Clean?node-id=0%3A1" target="_blank">prototype</a>
+               <h3 class = "app-description">A cloud sharing app that allows users to back-up files, organize them, create content, and collaborate.</h3>
+            </div>
+         </div>
+
+
+         <!-- Preview Image and Project Details -->
+
+         <section id = "project-details" class = "grid full-width">
+
+           <!-- margined grid re-start -->
+
+
+            <img id="deskspace-preview-image" class="image-fit full-width" src="assets/images/ds_preview.png" alt="Deskspace Screen">
+            <div id= "specs">
+               <h2 id="specs-heading" class = "desktop-only">Project Specs</h2>
+               <p><strong class = "details">  Duration </strong>   5 weeks</p>
+               <p><strong class = "details">  Design Roles </strong>   UX Researcher, UX Designer, &amp; Graphic Designer</p>
+               <p><strong class = "details">  Deliverables </strong>   User Surveys, User Personas, Competitive Analysis, User Stories &amp; Flows,
+                  Brand Personality &amp; Messaging, Wireframes, User Testing, Custom Graphics, Brand Guidelines, Clickable Prototype
+               </p>
+               <p><strong class = "details">  Tools  </strong>   Google Forms; Draw.io; Figma; Adobe Photoshop, Illustrator, and XD</p>
+            </div>
+         </section>
+
+
+         <section class = "row" id = "problem-solution">
+
+            <div class = "column">
+              <h2 class = "prob">The Problem</h2>
+              <p class = "problem">A company wants to get into the cloud storage industry - what do consumers already get from their cloud storage options,
+                  what users should they target, what do those users wish they had, how can you build it, and what type of brand should deliver it?
+              </p>
+            </div>
+
+            <div class = "column">
+              <h2 class="solu">The Solution</h2>
+              <p class = "solution">DeskSpace is a customizable cloud storage and content creation service for consumers straddling too many cloud services. In addition
+                  to all the Google Drive and Dropbox features, DeskSpace allows users to reduce file bloat across multiple services to get more
+                  ‘desk space’ without forcing local downloads or having to temporarily pay for more space.
+              </p>
+            </div>
+
+         </section>
+
+
+         <!-- end grid with margin -->
+         <!-- end of overview  -->
+
+
+         <!-- Discovery Content Begins -->
+         <section id = "discovery-content">
+
+            <!-- user surveys sub-section -->
+            <section id = "user-surveys">
+
+
+                  <!-- Questions area -->
+
+                    <h2 class = "ds-category-heading">User Surveys</h2>
+
+                      <!-- <img id = "questions" class = "desktop-only" src = "assets/images/questions.png"> -->
+
+                       <div class = "question-breakdown">
+
+                          <h5>Current Usage</h5>
+                          <p>What cloud services are people currently using and why?</p>
+                          <h5>Features</h5>
+                          <p>How users prioritize features such as: Uploading, Creating content, Organizing, &amp; Saving content online?</p>
+                          <h5>Money</h5>
+                          <p>What are users willing to pay for &amp; what are they already paying?</p>
+                          <h5>Collaboration</h5>
+                          <p>Are/could users be motivated to share and collaborate with non-users?</p>
+                          <h5>Respondents</h5>
+                          <p>What are the demographics of potential users &amp; their overall fluency with technology?</p>
+                          <h5>Devices</h5>
+                          <p>How users access these features (mobile vs web)</p>
+                       </div>
+
+                       <!-- Questionnaire button -->
+                       <a class="question btn" href="https://docs.google.com/document/d/1TEJP3ois44Khwo63D6coW1SJqJbbfFDbZTu1Spb40pM/edit?usp=sharing" target="_blank">See Full Questionnaire</a>
+
+
+
+            <!-- Answers section -->
+
+                  <div id = "responses">
+
+                     <div class = "animated desktop-only" id = "answers-wrapper">
+
+                      <p class = "big-quote" id="q1"><img class = "quote-sym" src = "assets/images/open_quotes.png" alt = "quotes">Most people have a Gmail account, so sharing and editing documents is easy.<img class = "quote-sym" src = "assets/images/close_quotes.png" alt = "quotes"><br><span>- Respondent 11</span></p>
+                      <p class = "big-quote" id="q2"><img class = "quote-sym" src = "assets/images/open_quotes.png" alt = "quotes">There's not enough free storage.<img class = "quote-sym" src = "assets/images/close_quotes.png" alt = "quotes"><br><span>- Respondent 25</span></p>
+                      <p class = "big-quote" id="q3"><img class = "quote-sym" src = "assets/images/open_quotes.png" alt = "quotes">Sometimes [I'm] not able to find things quickly since I have multiple accounts.<img class = "quote-sym" src = "assets/images/close_quotes.png" alt = "quotes"><br><span>- Respondent 12</span></p>
+                      <p class = "big-quote" id="q4"><img class = "quote-sym" src = "assets/images/open_quotes.png" alt = "quotes">[my biggest complaint is] lack of space! <img class = "quote-sym" src = "assets/images/close_quotes.png" alt = "quotes"><br><span>- Respondent 7</span></p>
+                      <p class = "big-quote" id="q5"><img class = "quote-sym" src = "assets/images/open_quotes.png" alt = "quotes">Dropbox is my favorite because it works like magic.<img class = "quote-sym" src = "assets/images/close_quotes.png" alt = "quotes"><br><span>- Respondent 27</span></p>
+
+                    </div>
+
+                     <div class="answer-takeaways">
+                        <h4 class ="surprise">Surprise</h4>
+                        <p>I expected that people would be familiar with cloud storage, but I was surprised to learn how oversaturated respondents felt with the number of cloud services they use.
+                           Almost half of respondents were using or had used <span class="emphasis">3 or more</span> storage apps, which came up time and again in the complaints.
+                        </p><br><br>
+                        <h4 class="not-surprise">Not A Surprise</h4>
+                        <p>People <span class="emphasis">really</span> like free space.</p>
+                     </div>
+
+                     <h3 class="sub-heading">common complaints</h3>
+
+                     <div id="complaints" class = "cards">
+                            <div id = "space" class = "complaint">
+                              <img class = "complaint-image" src = "assets/images/space.png" alt = "out of space icon">
+                              <div class = "summ" id="summ1">
+                                <p class = "percentage">44% of complaints</p>
+                                <h5 class = "complaint-title">Always running out of free space</h5>
+                              </div>
+                            </div>
+                            <div id = "accounts" class = "complaint">
+                              <img class = "complaint-image" src = "assets/images/accounts.png" alt = "too many logins icon">
+                              <div class = "summ" id="summ2">
+                                <p class = "percentage">22% of complaints</p>
+                                <h5 class = "complaint-title">Too many logins on too many services</h5>
+                              </div>
+                            </div>
+                            <div id = "sharing" class = "complaint">
+                              <img class = "complaint-image" src = "assets/images/sharing.png" alt = "sharing issues icon">
+                              <div class = "summ" id="summ3">
+                                <p class = "percentage">22% of complaints</p>
+                                <h5 class = "complaint-title">Sharing between services is often difficult</h5>
+                              </div>
+                            </div>
+                            <div id = "permissions" class = "complaint">
+                              <img class = "complaint-image" src = "assets/images/permissions.png" alt = "permissions issues icon">
+                              <div class = "summ" id="summ4">
+                                <p class = "percentage">11% of complaints</p>
+                                <h5 class = "complaint-title">I don't know who has permissions</h5>
+                              </div>
+                            </div>
+                     </div>
+
+                     <!-- Complaints analysis -->
+                     <div id = "complaints_takeaways" class = "analysis">
+                       <h3 class = "list-heading" id="complaint-heading">Complaint Takeaways</h3>
+                          <ul>
+                            <li>MUST give users as much free space as possible</li>
+                            <li>Give users an effective way to maximize free space</li>
+                            <li>Offer way(s) to alleviate login fatigue across services</li>
+                            <li>Minimize obstacles for sharing content with non-users</li>
+                            <li>Make permissions clear</li>
+                            <li>Make seeing current permissions easy</li>
+                          </ul>
+                      </div>
+
+                    <!-- more responses -->
+                      <div class = "answers">
+                          <div class = "answer" id="answer1">
+                             <h3 class = "sub-heading">desired features</h5>
+                             <img id="features" class = "image-fit" src="assets/images/features.png" alt="Feature Importance Graph">
+                             <p class = "takeaway">Takeaway: All of these features are important to users</p>
+                          </div>
+
+                          <div class = "answer" id="answer2">
+                             <h3 class = "sub-heading">computers vs. mobile</h5>
+                             <img id="devices" class = "image-fit" src="assets/images/devices.png" alt="Devices Preference">
+                             <p class = "takeaway">Takeaway: A desktop site is a MUST and the service should have a mobile site and/or app.</p>
+                          </div>
+
+                          <div class = "answer" id="answer3">
+                              <h3 class = "sub-heading" id="what">what respondents like about their current services</h5>
+                              <img id="g-drive" class = "image-fit" src="assets/images/gdrive.png" alt="G Drive Preferred">
+                              <img id="likes" class = "image-fit" src="assets/images/likes.png" alt="Infographic for what respondents like about current service">
+                              <p class = "takeaway">Takeaway: G-Drive is the dominant player in this space. Why? Because of its user-friendliness, programs, and large user base.</p>
+                          </div>
+                      </div>
+
+                  </div>
+
+
+
+
+            <!-- end of User Surveys Section -->
+            </section>
+
+            <!-- user personas section -->
+            <section id = "user-personas">
+
+              <div id = "personas">
+
+                      <h2 class = "ds-category-heading" id="user">User Personas</h2>
+
+
+                      <!-- margined grid for content -->
+                      <div class = "grid">
+
+                       <!-- Chris' user persona -->
+                         <div class="persona" id="chris-div">
+                            <img id="chris" src="assets/images/chris.jpg" alt="Chris Persona">
+                            <p class = "persona-heading">Chris &#8226; <i>On-the-go Professional</i> &#8226; 32</p>
+                            <p class = "persona-text">“I have a stressful job and a lot of social commitments, so anything that helps me stay on top of it
+                               without having to think is amazing.”
+                            </p>
+                            <a class="btn" href="https://www.dropbox.com/s/g9kckhqxod1jx13/Chris%20Cloud%20Persona.pdf?dl=0" target="_blank">See Chris' Persona</a>
+                         </div>
+
+                        <!-- divider for mobile -->
+                         <div class ="ds-coral-bg divider mobile-only"></div>
+
+                         <!-- Jenna's user persona -->
+                         <div class="persona" id="jenna-div">
+                            <img id="jenna" src="assets/images/jenna.jpg" alt="Jenna Persona" width="211" height="211">
+                            <p class = "persona-heading">Jenna &#8226; <i>Organized Planner</i> &#8226; 28</p>
+                            <p class = "persona-text">“I hate how many different programs and logins I have to use to accomplish the same daily tasks.
+                               Things should be more efficient.”
+                            </p>
+                            <a class="btn" href="https://www.dropbox.com/s/tba2o0ra9gqhmor/Jenna%20Cloud%20Persona.pdf?dl=0" target="_blank">See Jenna's Persona</a>
+                         </div>
+
+                    <!-- end of margined grid -->
+                       </div>
+
+                </div>
+
+            <!-- end of user persona section -->
+            </section>
+
+
+
+            <!-- competitive analysis section -->
+            <section id = "competitive">
+
+              <!-- H2 Category heading div for establishing grid items for alignment -->
+
+              <h2 class = "ds-category-heading" id = "comp-head">Competitive Analysis</h2>
+
+
+               <!-- competitive analysis button & link -->
+               <div class = "grid full-width">
+
+                <!-- Google Analysis -->
+                <div class="company" id="company1">
+                      <img class="co-logo image-fit full-width" src="assets/images/gdrive_logo.png" alt="G Drive Logo">
+                      <h3 class="company-name desktop-only">G Drive</h3>
+                      <img class="co-summary image-fit full-width" src="assets/images/gdrive_summary.png" alt="G Drive messaging">
+                      <p class="company-points">15 GB Free &#8226; Anything you want to store or create &#8226; Power of Google</p>
+                   </div>
+
+                   <div class="company-vl desktop-only"></div>
+                   <div class="divider ds-coral-bg mobile-only"></div>
+
+                   <!-- Dropbox Analysis -->
+                   <div class="company" id="company2">
+                      <img class = "co-logo image-fit full-width" src="assets/images/dropbox_logo.png" alt="Dropbox Logo">
+                      <h3 class="company-name desktop-only">Dropbox</h3>
+                      <img class="co-summary image-fit full-width" src="assets/images/dropbox_info.png" alt="Dropbox messaging">
+                      <p class="company-points">2 GB Free &#8226; TEAM, TEAM, TEAM &#8226; Do work together, securely</p>
+                   </div>
+
+                </div>
+
+                   <!-- opportunities for Deskspace brand -->
+                 <div id="opportunities" class = "desktop-only">
+                    <h5 class = "ds-mini-section-header">Opportunities in the Market</h5>
+                    <p>The brand can target consumers using <i>both</i> apps (or more), and position the product as the “best of both worlds”
+                       by offering the same features <strong class = "comp"><i>AND</i></strong> letting users make the most of their free space by getting rid of superfluous
+                       files across multiple apps.
+                    </p>
+
+                </div>
+
+                <a class="btn center" href="https://docs.google.com/document/d/1bvA67_OfNju5xqgsiXtGBJ-rdhCHuGUQi2fUVruQYu8/edit?usp=sharing" target="_blank">See Full Analysis</a>
+
+               <!-- end of Competitive Analysis -->
+            </section>
+
+          <!-- end of Discovery Main section -->
+         </section>
+
+
+         <!-- Info content section begins -->
+         <section id = "info-content">
+
+
+            <!-- user stories section -->
+            <section id="user-stories">
+
+              <h2 class = "ds-category-heading" id="user-head">User Stories</h2>
+
+               <!-- user stories images -->
+               <img id="stickies" class = "image-fit" src="assets/images/sticky_notes.jpg" alt="User stories on sticky notes">
+               <img id="priorities" class = "image-fit" src="assets/images/user_stories_chart.png" alt="user stories graph">
+
+               <!--user stories button -->
+               <a class="btn center" href="https://docs.google.com/spreadsheets/d/1VHeU5aOHu4iFuP_dCgjgUqPlJSuOqNH9e1IlnYu6Qjo/edit?usp=sharing" target="_blank">See User Stories</a>
+
+            </section>
+
+
+            <!-- User Flows section -->
+            <section id="user-flows">
+
+              <!-- H2 Category heading div for establishing grid items for alignment -->
+
+              <h2 class = "ds-category-heading">User Flows</h2>
+
+
+              <!-- defining margined grid -->
+
+                <div id = "user-flow-image">
+                   <!-- user flows preview image -->
+                   <img id = "user-flow-image" class = "image-fit" src="assets/images/colorful_user_flow.png" alt="User flow preview image">
+                   <!--user flows button -->
+                   <a class="btn center" href="https://drive.google.com/file/d/1bLH5HLX2Fi7N_QDnANWfJRLDzn6w8AnP/view?usp=sharing" target="_blank">See User Flows</a>
+                </div>
+
+           </section>
+
+            <!-- Wireframe section -->
+            <section id = "wireframes">
+
+              <!-- H2 Category heading div for establishing grid items for alignment -->
+
+
+
+              <!-- wireframe subcategory of sketches with margins -->
+              <div id = "wireframe-sketches">
+
+                  <h2 class = "ds-category-heading">Wireframes</h2>
+
+                  <img id = "wireframe-sketches-image" src="assets/images/sketches_combined.gif" alt="Wireframe sketches">
+                  <p id = "wireframe-sketch-description">While sketching, I went through multiple iterations of several pages such as the user dashboard here. It became clear the user
+                     dashboard didn’t need a nav menu, which led to the second image. However, in the last iteration I included buttons for common
+                     tasks that people have struggled with per user surveys and a couple of tasks that differentiate DeskSpace from its competitors like an “organize” button.
+                  </p>
+
+              </div>
+
+                <!-- wireframe subcategory of digital with margins -->
+              <div id = "digital-wireframes">
+
+                    <img id="digital-wireframes1"  src="assets/images/getting_started_wireframe.jpg" alt="Digital Wireframes">
+                    <img id="digital-wireframes2"  src="assets/images/bigfile_wireframe.png" alt="Digital Wireframes">
+
+                    <!-- button for all wireframes -->
+                    <a class="btn center" href="https://www.dropbox.com/s/ws13e3qg4zfj4ih/Wireframe%20Prototype%20Non%20Branded.pdf?dl=0" target="_blank">See Wireframes</a>
+              </div>
+
+              <!-- wireframe subcategory of testing with margins -->
+              <div id = "wireframe-testing">
+
+
+                    <div id = "tested-tasks">
+                      <h4 class = "user-testing">User Testing on Wireframes</h4>
+                       <h5 class = "list-heading2">Tested Tasks</h5>
+                       <ol class = "numbered-list">
+                          <li>Sign Up for an account</li>
+                          <li>Create a file</li>
+                          <li>Organize a file -- i.e. move it to a new folder</li>
+                       </ol>
+                      <h5 class = "list-heading2">Results</h5>
+                    <p id = "wireframe-testing-description">Users felt comfortable navigating most of the site, but as users narrated their experience, I observed there was confusion over
+                       the new features, especially regarding the organize/import button. Thus I updated the terminology to “clean up” and replaced one
+                       of the buttons with “sync," words used by the test users themselves.
+                    </p>
+                    </div>
+
+                    <img id="wireframe-testing-image" class = "image-fit desktop-only" src="assets/images/wireframe-testing-takeaways.png" alt="Changes from Wireframe Testing">
+
+                 </div>
+
+
+
+            <!-- end of wireframes Section -->
+            </section>
+
+        <!-- end of main info section -->
+         </section>
+
+
+         <!-- Visual content begins -->
+         <section id = "visual-content">
+
+
+            <!-- H2 Category heading div for establishing grid items for alignment -->
+
+            <h2 class = "ds-category-heading" id="brand-head">Brand ID</h2>
+
+
+            <!-- Brand ID begins- 1st category within Visual -->
+            <section id="brand-id">
+
+               <!-- concept subcategory -->
+               <div id = "concept">
+
+                    <p class = "concept-text">Keeping in mind 'Jenna' &amp; 'Chris' as well as stand-out quotes and relevant statistics from the user surveys,
+                      I landed on an overall brand concept.</p>
+
+                    <img id = "brand-concept-image" class="image-fit" src="assets/images/brand_concept.png" alt="brand concept page">
+
+                    <p class = "concept-text">The concept influenced everything from the choice of photography, to typography, to the shapes of buttons and cards.</p>
+
+               </div>
+
+               <!-- name & logo subcategory -->
+
+                  <h3 class = "sub-heading">name &amp; logo creation</h3>
+                  <!-- special quotes area -->
+                  <div id = "quotes-section">
+                    <div class = "quote-group" id = "quote1">
+                     <p class = "user-quotes">“Not enough free space…”</p>
+                     <p class = "respondent">- Respondent 19</p>
+                   </div>
+                   <div class = "quote-group" id = "quote2">
+                     <p class = "user-quotes">“…so many big files like photos &amp; video...”</p>
+                     <p class = "respondent">- Respondent 5</p>
+                   </div>
+                   <div class = "quote-group" id = "quote3">
+                     <p class = "user-quotes">“…running out of space…”</p>
+                     <p class = "respondent">- Respondent 27</p>
+                   </div>
+                  </div>
+                  <p id = "name-description">In choosing a name for the product, I looked at the language of the users themselves. I was inspired by the idea of space being
+                     such an ethereal - almost magical* - concept when it comes to ‘cloud computing’ and how not having enough of it or easy access to
+                     it means not being able to get your tasks done.<br><br>
+                     * “Dropbox works like magic. I don’t know how it does what it does.” - User 17
+                  </p>
+
+               <!-- preference subcategory -->
+               <div id = "preference-testing">
+                  <h3 class = "user-testing">Preference Testing (Round 1)</h3>
+                  <p class = "pref-description1">I showed some rough sketches of various logos and product name combinations to five respondents. The concept of
+                     ‘desk space’ with a recognizable desk, while my first idea, was actually preferred by all respondents.
+                  </p>
+                  <img id="branding-sketches" class = "image-fit" src="assets/images/logo_sketches.png" alt="logo sketches">
+               </div>
+            </section>
+
+
+
+            <!-- color palette & logo section -->
+            <!-- H2 Category heading div for establishing grid items for alignment -->
+
+            <h2 class = "ds-category-heading" id="color-head">Color Palette &amp; Logo</h2>
+
+
+            <section id="color-and-logo">
+
+              <p id = "color-description">I chose a beachy color palette to amplify the feeling of calm that users often lack in their busy lives.</p>
+
+              <img class = "image-fit" id="color-palette" src="assets/images/color_palette.jpg" alt ="deskspace color palette">
+
+              <h4 class = "sub-heading" id="rough-head">Logo Rough Drafts</h4>
+              <img class = "image-fit" id = "rough-logos" src="assets/images/bordered_logo_drafts.svg" alt="deskspace rough drafts logo">
+
+              <h4 class = "sub-heading">Final Logo</h4>
+              <img class = "image-fit" id="final-logo" src="assets/images/med_logo.png" alt="deskspace logo">
+
+
+            </section>
+
+
+
+            <!-- H2 Category heading div for establishing grid items for alignment -->
+
+            <h2 class = "ds-category-heading">Font &amp; Interactivity</h2>
+
+
+            <!-- Font & Interactivity section -->
+            <section id="font-buttons">
+
+              <div id="typography">
+
+                <div id = "proxima">
+
+                    <h2 class="font-title">Proxima Nova</h2>
+                    <div class = "font" id="title1">
+                      <h2>Title 1 48/60</h2>
+                      <p class="weight">ExtraBold</p>
+                    </div>
+                    <div class = "font" id="title2">
+                      <h2>Title 2 48/60</h2>
+                      <p class="weight">Regular</p>
+                    </div>
+                    <div class = "font" id="title3">
+                      <h3>Title 3 32/40</h3>
+                      <p class="weight">Bold</p>
+                    </div>
+                    <div class = "font" id="title4">
+                      <h4>Large 28/32</h4>
+                      <p class="weight">Regular</p>
+                    </div>
+                    <div class = "font" id="title5">
+                      <p id="reg-prox">Regular 16/20</p>
+                      <p class="weight">Regular</p>
+                    </div>
+
+                </div>
+
+                <div id = "madre">
+
+                  <h2 class="font-title">Madre Script</h2>
+                  <h4 id = "title1_b">Emphasis 20/48</h4>
+                  <p class="weight">Italic</p>
+
+                </div>
+
+                <div id = "source-sans">
+
+                  <h2 class = "font-title">Source Sans Pro</h2>
+
+                  <div class = "font" id = "title1_c">
+                    <p id = "small">Small 16/20</p>
+                    <p class="font-weight">Regular</p>
+                  </div>
+
+                  <div class = "font" id = "title2_c">
+                    <p id="smaller">Micro 8/12</p>
+                    <p class="font-weight">Bold</p>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+               <img class = "image-fit" id="buttons" src="assets/images/buttons.png" alt="interactivity buttons and features">
+               <a class="btn center" href="https://www.dropbox.com/s/w8rqqezss072rvb/DeskSpace%20Style%20Guide%20Final_Portfolio.pdf?dl=0" target="_blank">Brand Guidelines</a>
+
+            </section>
+
+            <!-- end of visual section -->
+         </section>
+
+         <!-- ******************** Prototype section -->
+
+         <section id = "prototype-content">
+
+
+            <!-- H2 Category heading div for establishing grid items for alignment -->
+
+            <h2 class = "ds-category-heading">Usability Tests</h2>
+
+            <!-- Usability Tests section -->
+            <section id="usability-tests">
+
+
+               <p id = "usability-test-description">After bringing the wireframes to life in Figma and after fixing a few bugs within the various click behaviors of the prototype,
+                  I asked new users to narrate their experiences and perform the same three tasks as before, plus one a new one that involved the
+                  ‘new feature’: deleting duplicates. The users were able to perform all four tasks, this time with even less hesitation. They
+                  said the interface was easy to understand and reminded them of Google Drive.
+               </p>
+
+               <div id = "tested-tasks-2">
+                  <h4 class = "list-heading2">Tested Tasks</h4>
+                  <ol id="tasks-2" class = "numbered-list">
+                     <li>Sign Up for an account</li>
+                     <li>Create a file</li>
+                     <li>Organize a file -- i.e. move it to a new folder</li>
+                     <li><img id = "plus" src="assets/images/plus.png" alt ="plus sign">Find &amp; Delete Duplicate Files</li>
+                  </ol>
+               </div>
+
+               <p id = "usability-test-description2">The improvements that I needed to make to the design were identified during the users’ narration phase
+                 of the usability tests.
+                 They were:
+               </p>
+
+
+               <!-- visual depiction of changes from usability tests -->
+               <section id = "usability-visuals">
+
+                  <div class = "usability" id = "menu">
+                     <img class = "image-fit" id="usability1" src="assets/images/main-menu.png" alt="menu version comparisons">
+                     <ul class = "bullets">
+                       <li>Having text next to a symbol was confusing, and users intuitively understood this was the button to return to the dashboard.</li>
+                     </ul>
+                  </div>
+
+                  <!-- mobile divider -->
+                  <!-- <div class ="ds-coral-bg divider mobile-only"></div> -->
+
+                  <div class = "usability" id="log-in">
+                    <div class = "usability-images">
+                       <img class = "image-fit" id="usability2" src="assets/images/login_page1.png" alt="log in page before">
+                       <img class = "image-fit" id="usability3" src="assets/images/login_page2.png" alt="log in page after">
+                    </div>
+                     <ul class = "bullets">
+                        <li>While email integration is integral, this page diverged too much from the industry norm and tripped up users.</li>
+                        <li>It was unnecessary to place so much emphasis on small email services, when email integration would ultimately allow users to login via their email systems anyway.</li>
+                        <li>Having an extra click to log in with a non-Gmail, non-Outlook, or non-Facebook account was punishing those users unintentionally, so I replaced the ‘other’ button with the email & password input fields.</li>
+                      </ul>
+                  </div>
+
+                  <!-- mobile divider -->
+                  <!-- <div class ="ds-coral-bg divider mobile-only"></div> -->
+
+                  <div class = "usability" id ="sign-in">
+                    <div class = "usability-images">
+                     <img class = "image-fit" id = "usability4" src="assets/images/signing-up1.png" alt="sign in comparisons before">
+                     <img class = "image-fit" id = "usability5" src="assets/images/signing-up2.png" alt="sign in comparisons after">
+                    </div>
+                     <ul class = "bullets">
+                       <li>Similarly to the login page, I realized that there just weren’t enough AOL & Yahoo users to warrant having two extra buttons for them.</li>
+                       <li>Instead, those users could use the “other” button.</li>
+                       <li>Facebook’s button was oddly placed and strange in proportion to the others, so I moved it.</li>
+                     </ul>
+                  </div>
+
+                  <!-- mobile divider -->
+                  <!-- <div class ="ds-coral-bg divider mobile-only"></div> -->
+
+                  <div class = "usability" id="sync">
+                    <div class = "usability-images">
+                     <img class = "image-fit" id = "usability6" src="assets/images/dropdown-menu.png" alt="sync comparisons old version">
+                     <img class = "image-fit" id = "usability7" src="assets/images/dropdown-menu2.png" alt="sync comparisons new version">
+                    </div>
+                     <ul class = "bullets">
+                       <li>Since the idea of syncing files between cloud accounts is somewhat novel, users were having to guess what the sync button did.</li>
+                       <li>When I added a dropdown menu that showed the cloud accounts you could sync with DeskSpace, users were much more certain of what the intent of this feature was.</li>
+                     </ul>
+                  </div>
+
+                <!-- end of usability images -->
+               </section>
+
+               <!-- end of usability testing section -->
+            </section>
+
+            <!-- preference testing subsection -->
+            <section id="preference-visuals">
+
+              <h3 class = "user-testing">Preference Testing (Round 2)</h3>
+
+
+            <div class = "flex-container">
+              <div class = "pref-group" id = "preference1">
+                  <h5 class = "pref-title">Color of buttons on Getting Started page</h5>
+                  <img class = "preference-image" src="assets/images/preference-menu-buttons-before.png" alt="getting started page menu button before">
+                  <img class = "preference-image after" src="assets/images/preference-menu-buttons-after.png" alt="getting started page menu button after">
+                  <p class = "pref-description">Unanimous vote!: Users said the colored buttons were easier to distinguish as buttons.</p>
+               </div>
+
+
+              <div class = "pref-group" id = "preference2">
+                  <h5 class = "pref-title">Different mobile 'clean up' icons</h5>
+                  <img class = "preference-image" src="assets/images/preference-mobile-tabs-before.png" alt="mobile device clean up icon before">
+                  <img class = "preference-image after" src="assets/images/preference-mobile-tabs-after.png" alt="getting started page menu button after">
+                  <p class = "pref-description">Unanimous vote!: Users said the deskspace logo icon was more visually appealing than the simplified, empty desk icon.</p>
+              </div>
+
+
+              <div class = "pref-group" id = "preference3">
+                 <h5 class = "pref-title">Hover color on dropdown menus</h5>
+                 <div id="pref-images-3">
+                   <img class = "preference-image" src="assets/images/preference-hover-colors-before.png" alt="sync drodown menu before">
+                   <img class = "preference-image after" src="assets/images/preference-hover-colors-after.png" alt="sync drodown menu after">
+                 </div>
+                 <p class = "pref-description">Unanimous vote! (again!): Users said the blue hover color was more pleasing than the orange hover color.</p>
+              </div>
+            </div>
+
+            </section>
+
+          <!-- end of Prototype content -->
+         </section>
+
+         <!-- ********* CONCLUSION ****** -->
+         <section class = "conclusion">
+
+                <h2 class="ds-category-heading">Conclusion</h2>
+
+                <p><strong class = "conc">It wasn’t surprising</strong> that users want as much free space as they can get and want files to upload
+                  and download as fast as possible; however, it was surprising that in trying to solve those issues on their own, users
+                  created new issues like having too many forgettable, disorganized accounts and getting confused on who had access to what.
+                </p>
+
+                <p>At first, I considered free space and upload times purely technical
+                   issues. My breakthrough was realizing I could use design to alleviate
+                   the “free space” issue by helping users make the most of the space
+                   they have. Not only did it address the number one problem among users,
+                   but it also fit perfectly with the needs of our second user persona,
+                   Jenna, who wants her things organized.
+                </p>
+
+                <div  class="quote">
+                   <p id = "conclusion-quote"><img class = "quote-sym" src = "assets/images/open_quotes_blue.png" alt = "quotes">[I realized] I could use design to alleviate the 'free space' issue by helping users make the most of the
+                      space they have.<img class = "quote-sym" src = "assets/images/close_quotes_blue.png" alt = "quotes">
+                   </p>
+                </div>
+
+                <img id = "illustration" class = "image-fit desktop-only" src="assets/images/diagram2.png" alt="revelation illustration">
+
+                 <p>If given more time, I would create more examples of what onboarding
+                    messaging should look like for first-time users so that during
+                    usability tests, I would hear more certainty from respondents about
+                    what the buttons like “clean up” and “sync” did. As it is, the users
+                    were able to correctly guess what the buttons did, and accomplished
+                    the other tested tasks easily, so the app is on the right track, and I
+                    look forward to seeing its successful evolution.
+                 </p>
+          </div>
+            <!-- end of conclusion section -->
+         </section>
+
+         <a class = "to-top" href="#top">Back to top</a>
+
+  </div>
+
+         <!-- footer -->
+         <div class="footer full-width">
+            <div class="footer-content">
+               <a id = "contactme" href="contact.html">
+                  <h2>Contact Me</h2>
+               </a>
+            </div>
+            <!-- clickable social icons -->
+            <div class="social">
+               <ul class="icons">
+                  <li class="linkedin">
+                     <a href="http://www.linkedin.com/in/madeleinebrooks" target="_blank">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                     </a>
+                  </li>
+                  <li class="github">
+                     <a href="https://github.com/madeleinemb" target="_blank">
+                        <ion-icon name="logo-github"></ion-icon>
+                     </a>
+                  </li>
+                  <li class="email">
+                     <a href="mailto:madeleineut@gmail.com" target="_blank">
+                        <ion-icon name="mail-outline"></ion-icon>
+                     </a>
+                  </li>
+               </ul>
+               <p class="caption">&copy; 2020 Madeleine Brooks – Designed and coded by hand.</p>
+            </div>
+
+        <!-- end of footer -->
+         </div>
+
+      <!-- end of Deskspace div -->
+      </div>
+
+      <!-- SCRIPTS -->
+      <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+      <!-- mobile menu -->
+      <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+              x.style.display = "none";
+            } else {
+              x.style.display = "block";
+            }
+          }
+      </script>
+
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-JEQHKEELR0"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-JEQHKEELR0');
+        </script>
+
+   </body>

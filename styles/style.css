@@ -1,0 +1,1087 @@
+/* ------------------------------------ */
+/* *************GENERAL STYLES**************** */
+/* ------------------------------------ */
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+.btn {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-basis: fill;
+
+
+	font-family: 'Sen', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 19px;
+	border-radius: 4px;
+	padding: 9px 20px;
+	margin: 20px 0px;
+}
+
+.btn.primary {
+	background: #4D1195;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.18);
+}
+
+.btn.primary a {
+	color: #FFFFFF;
+}
+
+.btn.secondary {
+	background: white;
+	border: 2px solid #4D1195;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.18);
+	font-weight: 600;
+}
+
+/* GENERAL FOOTER *************************** */
+.footer {
+	text-align: center;
+  line-height: 1.4;
+  padding-top: 30px;
+}
+
+/*footer icons */
+.icons li {
+	list-style: none;
+	display: inline;
+}
+
+i {
+	font-style: italic;
+}
+
+
+/*removing navigation auto-formatting*/
+ul, ol {
+	list-style-type: none;
+}
+
+/* erasing typical ul, href, and nav formatting */
+a,
+ul {
+	text-decoration: none;
+}
+
+/* ----- TYPOGRAPHY ------ */
+
+
+body {
+	font-family: 'Red Hat Display', sans-serif;
+	color: #313131;
+}
+
+h1 {
+
+	font-size: 28px;
+	font-weight: 600;
+}
+
+h2 {
+	font-family: 'Sen', sans-serif;
+	font-size: 26px;
+	font-weight: 600;
+}
+
+h3 {
+	font-family: 'Sen', sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	color: #313131;
+}
+
+h4 {
+	font-family: 'Red Hat Display', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 26px;
+}
+
+h6 {
+	font-family: 'Red Hat Display', sans-serif;
+	font-weight: 500;
+	font-style: italic;
+	line-height: 21px;
+}
+
+/* nav lefthand name styling */
+.title_caption {
+	color: #313131;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+/* nav items */
+.navigation {
+	font-family: 'Sen', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+/*home page hero text */
+.hero {
+	line-height: 1.6;
+}
+
+.fancy {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 54px;
+	font-weight: 400;
+	color: #313131;
+}
+
+.hero_text {
+	font-family: 'Red Hat Display', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.badge {
+	border: 1px solid #313131;
+	border-radius: 4px;
+	color: #000000;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 3px 5px;
+	font-family: 'proxima nova', sans-serif;
+}
+
+/* Case Study Names */
+.case_title {
+	font-size: 32px;
+}
+
+/* "what is it?" */
+.body_heading {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.details,
+.details .body_heading {
+	font-size: 14px;
+}
+
+.case-description {
+	font-weight: 400;
+}
+
+.summary {
+	line-height: 1.4;
+}
+
+.caption {
+	font-family: 'Sen', sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+
+
+/* NAVIGATION ***************************** */
+
+.navigation {
+	width: 100vw;
+	height: auto;
+}
+
+.list {
+	width: 100vw;
+	margin-top: -5px;
+	z-index: 0;
+}
+
+.nav_list {
+	display: flex;
+	flex-direction: row-reverse;
+	flex-basis: auto;
+	justify-content: space-around;
+	align-items: center;
+	padding: 5px 4% 0px 4%;
+	background: #5BDCFF;
+}
+
+.navigation .mobile_icon {
+	margin-right: 6px;
+}
+
+.nav_item {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+}
+
+.separator {
+	position: static;
+	width: 2px;
+	height: 40px;
+	background: #007DD1;
+}
+
+.nav {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 9px 22px;
+	position: relative;
+	z-index: 100;
+	width: 100%;
+	height: 80px;
+	background: #5BDCFF;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.35);
+}
+
+.title_caption {
+	margin: 8px 0px;
+}
+
+/* NAVIGATION LINK STYLES ***************************** */
+
+
+a:link,
+a:visited {
+	color: #313131;
+}
+
+
+/* header, SELECTED link */
+.navigation a:active {
+	color: #4D1195;
+}
+
+/* footer, UNVISITED link */
+.footer a:link,
+.footer a:visited {
+	color: #FFF;
+}
+
+
+/* --- FOOTER ---- */
+/* footer formatting */
+.footer {
+	background-color: #5BDCFF;
+	color: #313131;
+  line-height: 1.4;
+  padding-top: 30px;
+}
+
+.footer p {
+	font-family: 'Sen', sans-serif;
+}
+
+/* footer icon customizations from ion */
+.footer ion-icon {
+	color: #1A0D65;
+	font-size: 40px;
+}
+
+.footer-heading {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+
+.icons {
+	display: inline-block;
+	text-align: center;
+	padding: 16px 0px 10px 0px;
+}
+
+.icons li {
+	padding: 10px;
+}
+
+
+.footer .caption {
+	padding: 8px 10px 0px 10px;
+}
+
+
+/* padding before bottom of page within footer */
+.social {
+	padding-bottom: 30px;
+}
+
+
+.desktop-only {
+	display: none;
+}
+
+.resume-icon {
+	width: 20px;
+	padding-right: 5px;
+}
+
+
+/* ********************************** */
+/* ----END OF GENERAL SECION----- */
+
+
+/* ------------------------------------ */
+/* HOME*******HOME***********HOME*********** */
+/* ------------------------------------ */
+
+
+
+.hero {
+	background-image: url("/assets/images/HeroImage_small.png");
+	background-repeat: no-repeat;
+	background-size: 115%;
+	/* background-position: top; */
+	min-height: 468px;
+
+	/* min-height: 450px; */
+	/* max-height: calc(100vw*2); */
+}
+
+.hero_text {
+	padding-top: 86px;
+}
+
+.leftpad {
+	padding: 0px 0px 0px 5%;
+}
+
+.rightpad {
+	margin-top: -5px;
+	padding: 0px 7% 0px 17%;
+}
+
+.section_heading {
+	padding: 8px 16px;
+	border-radius: 8px;
+}
+
+.white_bg {
+	background: white;
+}
+
+.summary {
+	padding: 20px 16px 48px 16px;
+}
+
+#mywork {
+	background-color: #F46DED;
+	mix-blend-mode: hard-light;
+	margin: -100px 5% 32px 5%;
+}
+
+.color_bg {
+	background-color: #03B5E5;
+}
+
+.case_study {
+	background-color: white;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+	margin: 0px 5% 48px 5%;
+}
+
+.case_title_flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px;
+}
+
+.title_reverse {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.body_heading {
+	padding-bottom: 14px;
+}
+
+.details_container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 10px 16px;
+	background: #D9FCFB;
+	border-radius: 16px;
+}
+
+.details {
+	margin: 6px 0px;
+}
+
+.bubbles {
+	background-image: url("/assets/images/About_bg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-bottom: 20px;
+}
+
+.white_column {
+	display: flex;
+	flex-direction: column;
+
+	background: white;
+	margin: 10px 5% 48px 5%;
+	padding: 20px 16px 48px 16px;
+	border-radius: 11px;
+}
+
+#aboutme1 {
+	margin: 20px 5% 32px 5%;
+	border: 3px #F46DED solid;
+}
+
+#contactme1 {
+	margin: 20px 5% 32px 5%;
+	border: 3px #03B5E5 solid;
+}
+
+.photo_and_intro {
+	display: flex;
+	flex-direction: row;
+	margin: 22px 0px;
+}
+
+.image {
+	border-radius: 15px;
+	min-width: 100px;
+	max-width: 160px;
+	object-fit: scale-down;
+}
+
+.outlined_title {
+	margin: 0px 0px 22px 22px;
+	min-width: 130px;
+}
+
+.about_short p {
+	line-height: 1.5;
+}
+
+.about_short h4 {
+	margin-bottom: 16px;
+}
+
+.simple_lk {
+	font-weight: 700;
+	white-space: nowrap;
+	text-decoration: underline;
+	color: #4D1195 !important;
+}
+
+.contact-text > * {
+	margin: 30px 0;
+}
+
+.contact-text > *:first-child {
+	margin: 0px;
+}
+
+#name {
+	height: 42px;
+	width: 100%;
+	margin: 8px 0 16px 0;
+}
+
+#email {
+	height: 42px;
+	width: 100%;
+	margin: 0 0 16px 0;
+}
+
+#message {
+	height: 100px;
+	width: 100%;
+	margin-bottom: 16px;
+}
+
+#send {
+	width: 100%;
+}
+
+
+/* images in previews for case studies */
+.imagepreview {
+	object-fit: cover;
+	width: 100%;
+}
+
+
+/* ---------------------------------------------- */
+/* *******HydroApps******************************* */
+/* ---------------------------------------------- */
+
+.gallery {
+	display: flex;
+	justify-content: center;
+  align-items: center;
+	width: 600px;
+	height: 375px;
+	background-color: #1F1F1F;
+}
+
+.mySlides {
+	object-fit: contain;
+	max-width: 600px;
+	margin: auto;
+}
+
+
+
+/* ---------------------------------- */
+/* *************ABOUT********************* */
+/* ------------------------------------ */
+
+/* HERO IMAGE FIT MEDIA QUERIES */
+
+
+@media screen and (min-width: 400px) {
+	.hero {
+		background-image: url("/assets/images/HeroImage_med.png");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		min-height: 425px;
+	}
+}
+
+@media screen and (min-width: 500px) {
+	.hero {
+		background-image: url("/assets/images/HeroImage_large.png");
+		max-height: 500px;
+	}
+
+	.hero_text {
+		max-width: 550px;
+		margin: auto;
+	}
+
+	#mywork {
+		margin-top: -100px;
+	}
+}
+
+	@media screen and (min-width: 600px) {
+		.hero {
+			background-image: url("/assets/images/HeroImage_tablet.png");
+			background-size: 118%;
+			max-height: 550px;
+		}
+
+}
+
+
+				/* ------------------------------ */
+				/* --TABLET ADJUSTMENTS---------------------------- */
+				/* ------------------------------ */
+
+
+
+				@media screen and (min-width: 767px) {
+
+				/* GENERAL */
+
+				/* Typography */
+
+				h4 {
+					font-size: 24px;
+				}
+
+				h6 {
+					font-size: 20px;
+				}
+
+				.title_text h2 {
+					font-size: 22px;
+				}
+
+				.title_caption {
+					font-size: 18px;
+				}
+
+				.desktop-only {
+					display: contents;
+				}
+
+				/* Case Study Names */
+				.case_title {
+					font-size: 26px;
+				}
+
+				.case-description {
+					font-size: 14px;
+				}
+
+				.badge {
+					font-size: 14px;
+				}
+
+				.contact-initial {
+					font-size: 26px;
+				}
+
+				.contact-secondary {
+					font-size: 22px;
+				}
+
+				.caption {
+					font-size: 14px;
+				}
+
+				/* NAVIGATION */
+
+				.mobile_icon {
+					display: none;
+				}
+
+				.navigation {
+					width: 100vw;
+					height: 45px;
+					padding: 10px 40px;
+					align-content: center;
+					display: flex;
+					background: #5BDCFF;
+					box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.35);
+				}
+
+				.nav {
+					flex-basis: 60%;
+					display: block;
+					padding: 0px;
+					position: relative;
+					z-index: 0;
+					justify-content: center;
+					width: auto;
+					height: auto;
+					box-shadow: none;
+				}
+
+				.name {
+					flex-basis: 80%
+				}
+
+				.web_title {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+				}
+
+				.job_title {
+					margin-left: 16px;
+				}
+
+				.separator {
+					display: none;
+				}
+
+				.list {
+					flex-basis: 40%;
+					margin-top: 0px;
+					z-index: 0;
+					align-self: center;
+				}
+
+				.nav_list {
+					display: flex;
+					flex-direction: row;
+					justify-content: flex-end;
+					align-items: baseline;
+					padding: 0px;
+					background: #5BDCFF;
+				}
+
+				.nav_item {
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+					align-items: center;
+					width: auto;
+					margin-left: 32px;
+				}
+
+				.title_caption {
+					margin: 0px;
+				}
+
+				/* HOME ****************/
+				/***********/
+
+				.job_title {
+					margin-left: 8px;
+				}
+
+				.hero {
+					background-image: url("/assets/images/HeroImage_large_tablet.png");
+					background-size: 118%;
+					max-height: 500px;
+				}
+
+				.hero_text {
+					padding-top: 66px;
+				}
+
+				#mywork {
+					margin-top: -128px;
+				}
+
+				.case_study {
+					background-color: initial;
+					box-shadow: none;
+					margin: 0px 5%;
+				}
+
+				.title_reverse {
+					display: block;
+				}
+
+				.imagepreview {
+					width: 50vw;
+					float: left;
+					border-radius: 8px;
+					margin-right: 32px;
+					object-fit: cover;
+					min-height: 250px;
+				}
+
+				.case_title_flex {
+					padding: 0px;
+				}
+
+				.badge {
+					margin-right: 2%;
+				}
+
+				.summary {
+					padding: 16px 1% 20px 0px;
+					margin-bottom: 48px;
+				}
+
+				.summary_no_details {
+					min-height: 250px;
+				}
+
+				.details_container {
+					margin: -20px 18% 20px 18%;
+				}
+
+				/* HOME: ABOUT ME SECTION OF HOME */
+				.white_column {
+					padding: 20px 10% 48px 10%;
+				}
+
+				.photo_and_intro {
+					justify-content: space-between;
+				}
+
+				/* adding outline on bio heading */
+				.outlined_title {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					padding: 0px 2.5%;
+
+					border: 2px solid #F46DED;
+					height: 160px;
+					margin-top: 20px;
+					border-radius: 10px;
+				}
+
+				/* HOME: CONTACT ME SECTION OF HOME */
+
+				.contact-text {
+					padding-top: 30px;
+				}
+
+				.footer-heading {
+					font-size: 22px;
+				}
+
+
+
+
+				/* CONTACT ME PAGE *************************************** */
+				/* ******************************************************* */
+
+
+
+
+
+				}
+
+
+
+
+						@media screen and (min-width: 1023px) {
+						/* *********************************** */
+						/* SML DESKTOP ADJUSTMENTS */
+						/* *********************************** */
+
+						/* DESKTOP TYPOGRAPHY */
+
+						h2 {
+							font-size: 30px;
+						}
+
+						.title_text h2 {
+							font-size: 30px;
+						}
+
+						.fancy {
+							font-size: 70px;
+						}
+
+						.nav_item {
+							font-size: 16px;
+							font-weight: 400;
+						}
+
+						.case-description {
+							font-size: 16px;
+						}
+
+						/* HOME *****************************/
+						/**********************************/
+
+						.navigation {
+							height: 60px;
+						}
+
+						.nav {
+							align-self: center;
+						}
+
+						.title_caption {
+							padding-top: 5px;
+						}
+
+						.list {
+							padding-top: 2px;
+						}
+
+						.hero_text {
+							padding-top: 60px;
+						}
+
+						.hero {
+							background-image: url("/assets/images/Desktop_hero_image.png");
+							background-size: 100%;
+							min-height: 500px;
+						}
+
+						.name {
+							align-content: center;
+						}
+
+						#mywork {
+							margin-top: -165px;
+						}
+
+						.imagepreview{
+							min-height: 375px;
+							max-height: none;
+						}
+
+						.details_container {
+							max-width: 500px;
+							margin: 30px 0px 0px 0px;
+						}
+
+						.summary_no_details {
+							min-height: auto;
+						}
+
+						.case_study {
+							margin-bottom: 60px;
+						}
+
+						#Deskspace {
+							margin-bottom: 80px;
+						}
+
+						.bubbles > * {
+							margin: 0 auto;
+							width: 550px;
+						}
+
+						/* fixing margin on section headings to fit auto */
+						#aboutme1 {
+							margin: 20px auto 26px auto;
+						}
+
+						#contactme1 {
+							margin: 64px auto 26px auto;
+						}
+
+						.white_column {
+							padding: 20px 5% 48px 5%;
+						}
+
+						.outlined_title {
+							height: 142px;
+						}
+
+						}
+
+
+
+
+
+
+
+
+										@media screen and (min-width: 1227px) {
+										/* *********************************** */
+										/* Medium DESKTOP ADJUSTMENTS */
+
+										/* GENERAL ************************ */
+
+										/*TYPOGRAPHY*/
+
+										h3 {
+											font-size: 22px;
+										}
+
+										.fancy {
+											font-size: 90px;
+										}
+
+										.hero {
+											min-height: 475px;
+										}
+
+										.hero_text {
+											font-size: 20px;
+											max-width: 700px;
+											padding-top: 80px;
+										}
+
+
+
+										/* -------------------------------------------- */
+										/* HOMEPAGE ************************ */
+
+
+										.footer-heading {
+											font-size: 36px;
+										}
+
+										/* hero styles in header */
+										.hero {
+											line-height: 1.6;
+										}
+
+										#myBtn {
+											bottom: 40px;
+											right: 60px;
+											height: 60px;
+											width: 60px;
+										}
+
+										.case-title {
+											font-weight: 400;
+										}
+
+										.case_title_flex,
+										.summary {
+											margin-right: 12.5%;
+										}
+
+										.case-description {
+											font-size: 16px;
+											line-height: 1.4;
+										}
+
+										.imagepreview {
+											width: 40vw;
+											float: left;
+											margin-left: 12.5%;
+										}
+
+										.details_container {
+											max-width: none;
+											margin-left: 0px;
+										}
+
+										#mywork {
+											margin: -64px 12.5% 44px 12.5%;
+										}
+
+										.case_study {
+											margin: 48px 0px;
+										}
+
+										#Deskspace,
+										#HydroApps {
+											margin-bottom: 124px;
+										}
+
+
+
+										.home ion-icon {
+											color: white;
+											font-size: 40px;
+										}
+
+										.icons {
+											padding: 20px;
+											text-align: center;
+											display: inline-block;
+										}
+
+										.icons li {
+											padding: 20px;
+										}
+
+										.home .footer {
+											padding-top: 60px;
+										}
+
+										.footer-content p {
+											display: inherit;
+										}
+
+										.social .caption {
+											font-size: 14px;
+											padding: 0px;
+										}
+
+
+										/* *********************************** */
+										/* ABOUT ------------------------------- */
+										/* *********************************** */
+
+
+
+												@media screen and (min-width: 1300px) {
+
+													.hero {
+														background-image: url("/assets/images/Desktop_hero_image_med.png");
+													}
+
+												}
+
+												@media screen and (min-width: 1500px) {
+
+													.hero {
+														background-image: url("/assets/images/Desktop_hero_image_med_long.png");
+													}
+
+												}
+
+
+
+
+																				@media screen and (min-width: 1700px) {
+																					/* *********************************** */
+																					/* Large Desktop ADJUSTMENTS---------------------------- */
+																					/* *********************************** */
