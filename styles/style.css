@@ -76,6 +76,9 @@ ul {
 
 /* ----- TYPOGRAPHY ------ */
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
 	font-family: 'Red Hat Display', sans-serif;
@@ -83,9 +86,16 @@ body {
 }
 
 h1 {
-
 	font-size: 28px;
 	font-weight: 600;
+}
+
+/* Satellite Page Typography Modifications */
+
+.sat h1 {
+	font-family: 'Sen', sans-serif;
+	font-size: 22px;
+	/* font-weight: 600; */
 }
 
 h2 {
@@ -187,6 +197,10 @@ h6 {
 	font-weight: 600;
 }
 
+.centered {
+	margin: 0px auto;
+}
+
 
 
 /* NAVIGATION ***************************** */
@@ -256,6 +270,15 @@ a:visited {
 	color: #313131;
 }
 
+/* Satellite pages Navigation Modifications */
+/************/
+			.sat .nav {
+				height: 46px;
+			}
+
+			.job_title {
+				display: none;
+			}
 
 /* header, SELECTED link */
 .navigation a:active {
@@ -320,6 +343,14 @@ a:visited {
 	display: none;
 }
 
+.desktop-only.case_title_flex {
+	display: none;
+}
+
+.no-mobile {
+	display: none;
+}
+
 .resume-icon {
 	width: 20px;
 	padding-right: 5px;
@@ -336,9 +367,10 @@ a:visited {
 
 
 
-.hero {
+.home .hero {
 	background-image: url("/assets/images/HeroImage_small.png");
 	background-repeat: no-repeat;
+	background-position: 0% 90%;
 	background-size: 115%;
 	/* background-position: top; */
 	min-height: 468px;
@@ -347,12 +379,12 @@ a:visited {
 	/* max-height: calc(100vw*2); */
 }
 
-.hero_text {
-	padding-top: 86px;
+.home .hero_text {
+	padding-top: 60px;
 }
 
 .leftpad {
-	padding: 0px 0px 0px 5%;
+	padding: 0px 0px 0px 10%;
 }
 
 .rightpad {
@@ -369,6 +401,25 @@ a:visited {
 	background: white;
 }
 
+/* #Lupl_pic {
+	background-image: url("/assets/images/Lupl_image.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+}
+
+#Deskspace_pic {
+	background-image: url("/assets/images/ds_preview.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#HydroApps_pic {
+	background-image: url("/assets/images/water_drop_bringing_aquatics.jpg");
+	background-repeat: no-repeat;
+	background size: cover;
+} */
+
 .summary {
 	padding: 20px 16px 48px 16px;
 }
@@ -376,11 +427,19 @@ a:visited {
 #mywork {
 	background-color: #F46DED;
 	mix-blend-mode: hard-light;
-	margin: -100px 5% 32px 5%;
+	margin: -150px 5% 32px 5%;
 }
 
 .color_bg {
 	background-color: #03B5E5;
+}
+
+#Lupl_pic {
+	max-height: 250px;
+}
+
+#HydroApps_pic {
+	background-color: #000000;
 }
 
 .case_study {
@@ -395,11 +454,6 @@ a:visited {
 	justify-content: space-between;
 	align-items: center;
 	padding: 16px;
-}
-
-.title_reverse {
-	display: flex;
-	flex-direction: column-reverse;
 }
 
 .body_heading {
@@ -465,11 +519,11 @@ a:visited {
 	min-width: 130px;
 }
 
-.about_short p {
+#about_short p {
 	line-height: 1.5;
 }
 
-.about_short h4 {
+#about_short h4 {
 	margin-bottom: 16px;
 }
 
@@ -478,6 +532,7 @@ a:visited {
 	white-space: nowrap;
 	text-decoration: underline;
 	color: #4D1195 !important;
+	padding-left: 1.5%;
 }
 
 .contact-text > * {
@@ -539,15 +594,68 @@ a:visited {
 
 
 
-/* ---------------------------------- */
 /* *************ABOUT********************* */
 /* ------------------------------------ */
+
+.about {
+	margin: 0px 5%;
+	font-size: 14px;
+	line-height: 18px;
+	/* font-family: 'Red Hat Display', sans-serif; */
+}
+
+.about .page-heading {
+	margin: 40px auto 20px auto;
+	text-align: center;
+}
+
+.about .photo_and_intro {
+	width: 100vw;
+	margin-bottom: 20px;
+}
+
+.aboutme_heading {
+	flex-grow: 3;
+	flex-wrap: wrap;
+}
+
+.profilepic {
+	flex-shrink: 3;
+	width: 100px;
+	object-fit: contain;
+	margin-right: 20px;
+}
+
+.aboutme_heading,
+.card-heading {
+	font-family: 'Red Hat Display', sans-serif;
+	font-size: 20px;
+}
+
+.about_text {
+	float: left;
+}
+
+.magnadoodle {
+	transform: rotate(20deg);
+	float: right;
+	margin-right: -10px;
+	width: 50vw;
+}
+
+.pic_and_caption {
+	display: flex;
+	float: right;
+	flex-direction: column;
+}
+
+
 
 /* HERO IMAGE FIT MEDIA QUERIES */
 
 
 @media screen and (min-width: 400px) {
-	.hero {
+	.home .hero {
 		background-image: url("/assets/images/HeroImage_med.png");
 		background-repeat: no-repeat;
 		background-size: 100%;
@@ -556,12 +664,12 @@ a:visited {
 }
 
 @media screen and (min-width: 500px) {
-	.hero {
+	.home .hero {
 		background-image: url("/assets/images/HeroImage_large.png");
 		max-height: 500px;
 	}
 
-	.hero_text {
+	.home .hero_text {
 		max-width: 550px;
 		margin: auto;
 	}
@@ -569,13 +677,21 @@ a:visited {
 	#mywork {
 		margin-top: -100px;
 	}
+
+	#Lupl_pic {
+		max-height: 70vw;
+	}
 }
 
 	@media screen and (min-width: 600px) {
-		.hero {
+		.home	.hero {
 			background-image: url("/assets/images/HeroImage_tablet.png");
 			background-size: 118%;
 			max-height: 550px;
+		}
+
+		#Lupl_pic {
+			max-height: 60vw;
 		}
 
 }
@@ -599,6 +715,7 @@ a:visited {
 
 				h6 {
 					font-size: 20px;
+					line-height: 28px;
 				}
 
 				.title_text h2 {
@@ -609,7 +726,11 @@ a:visited {
 					font-size: 18px;
 				}
 
-				.desktop-only {
+				.mobile-only {
+					display: none;
+				}
+
+				.no-mobile {
 					display: contents;
 				}
 
@@ -720,58 +841,71 @@ a:visited {
 					margin-left: 8px;
 				}
 
-				.hero {
+				.home .hero {
 					background-image: url("/assets/images/HeroImage_large_tablet.png");
 					background-size: 118%;
 					max-height: 500px;
 				}
 
-				.hero_text {
+				.home .hero_text {
 					padding-top: 66px;
 				}
 
 				#mywork {
-					margin-top: -128px;
+					margin: -128px 9% 32px 9%;
+					margin: inherit 9%;
+				}
+
+				.desktop-only.case_title_flex {
+					display: flex;
+				}
+
+				.case_studies {
+					display: flex;
+					flex-direction: column;
+					margin: 0px 5%;
 				}
 
 				.case_study {
 					background-color: initial;
-					box-shadow: none;
-					margin: 0px 5%;
+					display: flex;
+					flex-direction: column;
+					margin: 0px 5% 56px 5%;
 				}
 
-				.title_reverse {
-					display: block;
-				}
-
-				.imagepreview {
-					width: 50vw;
-					float: left;
-					border-radius: 8px;
-					margin-right: 32px;
-					object-fit: cover;
-					min-height: 250px;
-				}
+				/* .title_reverse {
+					flex-direction: column;
+				} */
 
 				.case_title_flex {
-					padding: 0px;
+					padding: 20px 0px;
+					justify-content: flex-start;
 				}
 
-				.badge {
+				.case_title_flex > * {
 					margin-right: 2%;
 				}
 
+				#Lupl_pic {
+						max-height: 50vw;
+						object-position: 50% 60%;
+					}
+
+				.badge {
+					margin: 0%;
+				}
+
 				.summary {
-					padding: 16px 1% 20px 0px;
+					padding: 5px 35px 0px 35px;
 					margin-bottom: 48px;
 				}
 
 				.summary_no_details {
-					min-height: 250px;
+					/* min-height: 250px; */
 				}
 
 				.details_container {
-					margin: -20px 18% 20px 18%;
+					/* margin: -20px 18% 20px 18%; */
 				}
 
 				/* HOME: ABOUT ME SECTION OF HOME */
@@ -868,11 +1002,11 @@ a:visited {
 							padding-top: 2px;
 						}
 
-						.hero_text {
+						.home .hero_text {
 							padding-top: 60px;
 						}
 
-						.hero {
+						.home .hero {
 							background-image: url("/assets/images/Desktop_hero_image.png");
 							background-size: 100%;
 							min-height: 500px;
@@ -886,13 +1020,57 @@ a:visited {
 							margin-top: -165px;
 						}
 
-						.imagepreview{
-							min-height: 375px;
-							max-height: none;
+						.summary {
+							padding: 0px;
+							margin: 0px;
 						}
 
+						.case_study {
+							display: flex;
+							flex-direction: row;
+							box-shadow: none;
+							width: 90%;
+							margin-bottom: 60px;
+						}
+
+						.col {
+							display: flex;
+							flex-direction: column;
+							padding: 0px;
+							margin: 0px;
+						}
+
+						.col2 {
+							display: flex;
+							flex-direction: column;
+							margin-left: 2%;
+							width: 60vw;
+						}
+
+						#Lupl_pic {
+								max-height: none;
+								object-fit: cover;
+							}
+
+						#Deskspace_pic,
+						#HydroApps_pic {
+								object-fit: contain;
+								object-position: center;
+							}
+
+						.imagepreview {
+							min-height: 0;
+							width: 40vw;
+							flex: 1 0 0;
+						}
+
+						.case_title_flex {
+							padding-top: 0px;
+						}
+
+
 						.details_container {
-							max-width: 500px;
+
 							margin: 30px 0px 0px 0px;
 						}
 
@@ -900,17 +1078,9 @@ a:visited {
 							min-height: auto;
 						}
 
-						.case_study {
-							margin-bottom: 60px;
-						}
-
-						#Deskspace {
-							margin-bottom: 80px;
-						}
-
 						.bubbles > * {
 							margin: 0 auto;
-							width: 550px;
+							width: 44vw;
 						}
 
 						/* fixing margin on section headings to fit auto */
@@ -929,6 +1099,12 @@ a:visited {
 						.outlined_title {
 							height: 142px;
 						}
+
+						/* About Section of Homepage */
+						.bubbles {
+							background-image: url("/assets/images/About_bg_desktop.png");
+						}
+
 
 						}
 
@@ -955,11 +1131,11 @@ a:visited {
 											font-size: 90px;
 										}
 
-										.hero {
-											min-height: 475px;
+										.home .hero {
+											min-height: 486px;
 										}
 
-										.hero_text {
+										.home .hero_text {
 											font-size: 20px;
 											max-width: 700px;
 											padding-top: 80px;
@@ -972,11 +1148,11 @@ a:visited {
 
 
 										.footer-heading {
-											font-size: 36px;
+											font-size: 32px;
 										}
 
 										/* hero styles in header */
-										.hero {
+										.home .hero {
 											line-height: 1.6;
 										}
 
@@ -991,20 +1167,18 @@ a:visited {
 											font-weight: 400;
 										}
 
-										.case_title_flex,
+										/* .case_title_flex,
 										.summary {
 											margin-right: 12.5%;
-										}
+										} */
 
 										.case-description {
 											font-size: 16px;
 											line-height: 1.4;
 										}
 
-										.imagepreview {
-											width: 40vw;
-											float: left;
-											margin-left: 12.5%;
+										.case_studies {
+											margin: 0px 12.5%;
 										}
 
 										.details_container {
@@ -1017,18 +1191,12 @@ a:visited {
 										}
 
 										.case_study {
-											margin: 48px 0px;
+											margin: 0px 0px 78px 0px;
+											width: 100%;
 										}
-
-										#Deskspace,
-										#HydroApps {
-											margin-bottom: 124px;
-										}
-
 
 
 										.home ion-icon {
-											color: white;
 											font-size: 40px;
 										}
 
@@ -1054,6 +1222,7 @@ a:visited {
 											font-size: 14px;
 											padding: 0px;
 										}
+									}
 
 
 										/* *********************************** */
@@ -1064,16 +1233,21 @@ a:visited {
 
 												@media screen and (min-width: 1300px) {
 
-													.hero {
+													.home .hero {
 														background-image: url("/assets/images/Desktop_hero_image_med.png");
+														min-height: 550px;
+													}
+
+													#mywork {
+														margin-top: -164px;
 													}
 
 												}
 
 												@media screen and (min-width: 1500px) {
 
-													.hero {
-														background-image: url("/assets/images/Desktop_hero_image_med_long.png");
+													.home .hero {
+														min-height: 600px;
 													}
 
 												}
@@ -1085,3 +1259,125 @@ a:visited {
 																					/* *********************************** */
 																					/* Large Desktop ADJUSTMENTS---------------------------- */
 																					/* *********************************** */
+
+																					/* General Typography */
+
+																					.btn /* spacing! */ {
+																						padding: 16px 20px;
+																					}
+
+
+																					.title_caption {
+																						font-size: 20px;
+																					}
+
+																					.fancy {
+																						font-size: 110px;
+																					}
+
+																					.rightpad {
+																						font-size: 22px;
+																					}
+
+																					.nav_item {
+																						font-size: 20px;
+																					}
+
+																					h3 {
+																						font-size: 24px;
+																					}
+
+																					.case_title {
+																						font-size: 40px;
+																					}
+
+																					.badge {
+																						font-size: 24px;
+																					}
+
+																					.body_heading {
+																						font-size: 20px;
+																					}
+
+																					.case-description {
+																						font-size: 18px;
+																					}
+
+																					.details,
+																					.details .body_heading {
+																						font-size: 16px;
+																					}
+
+																					.btn {
+																						font-size: 22px;
+																					}
+
+																					/* Home page adjustments */
+
+																					.home .hero_text {
+																						padding-top: 100px;
+																						max-width: 800px;
+																					}
+
+																					.home .hero {
+																						min-width: 100vw;
+																						min-height: 600px;
+																						background-position-y: -50px;
+																					}
+
+																					.leftpad {
+																						padding: 0px 0px;
+																					}
+
+																					.rightpad {
+																						padding: 0px 0px 0px 17%;
+																					}
+
+
+																					#mywork {
+																						margin-top: -100px;
+																						margin-bottom: 0px;
+																					}
+
+																					.case_study {
+																						margin: 64px 0px;
+																					}
+
+																					.case-description {
+																						padding-bottom: 18px;
+																					}
+
+																					#Lupl_pic {
+																						min-height: 450px;
+																					}
+
+																					#Deskspace_pic {
+																						max-height: 410px;
+																					}
+
+																					/* About section on Homepage */
+																					#about_short {
+																						margin-top: 56px;
+																					}
+
+																					.image {
+																						max-width: 186px;
+																						flex-grow: 1;
+																					}
+
+																					.photo_and_intro {
+																						display: flex;
+																						flex-direction: row;
+																						margin: 22px 0px;
+																						width: 100%;
+																						justify-content: flex-start;
+																					}
+
+																					.outlined_title {
+																						flex-grow: 2;
+																					}
+
+
+
+
+																				}

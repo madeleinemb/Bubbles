@@ -3,7 +3,7 @@
    <head>
      <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Deskspace Case Study</title>
+     <title>Madeleine: About Me</title>
      <link rel="stylesheet" href="styles/reset.css">
      <link rel="stylesheet" href="styles/style.css">
      <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,125 +12,161 @@
   </head>
   <body>
 
-      <div class="nav">
-          <a href="index.html" class="web_title">
-            <p class="title_text">Madeleine Brooks,<span class="title_caption">Product Designer</span></p>
-          </a>
-          <ul class="navigation">
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="assets/MBrooks_Resume_22.pdf" target="_blank"><img class="resume-icon" src="assets/images/open_new_win_transparent.png" alt="open in new window">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-      </div>
+    <div class="sat">
 
-      <div class = "about">
+        <div class="navigation">
 
+            <div class="nav">
 
-        <h1 class="page-heading centered">About Me</h1>
+                <div class="name">
+                      <a href="index.html" class="web_title">
+                          <div class="title_text">
+                              <h2 >Madeleine Brooks<span class="no-mobile">,</span>
+                          </div>
+                          <div class="job_title">
+                                <h2 class="title_caption"> Product Designer</h2>
+                          </div>
+                      </a>
+                </div>
 
-        <div class="card">
-
-            <img class="profilepic" src = "assets/images/Profile_pic.png" alt = "my picture">
-
-            <div class="aboutme_heading">
-                <h2 class="card-heading">"Hi! I'm Madeleine."</h2>
-                <h3 class="title_caption"><em>Narrator: She waves enthusiastically</em></h3>
             </div>
 
-            <p class = "about_text">I've always loved creating! As a kid driving back and forth all the time across Texas - note: Texas is huge, i.e. lots of driving! - my Magna Doodle kept me sane. As I grew up, the Magna Doodle was upgraded
-              to oil paints on canvas, then Photoshop, then Tilt Brush, then Figma, but my pure joy in bringing visuals to life never changed. (Magna Doodle, I still love you.) That said, ‘art’ or ‘design’ were never introduced to me as careers.
-              Luckily, this worked out in my favor… eventually. By the time I set my sights on UX Design, I got to roll more than just my love of design into a career. I found that UX Design combined my passion for psychology, learning and teaching
-              languages, exploring technology, and a pursuit of efficiency.
-              <br>
-              <img class="magnadoodle" src = "assets/images/magnadoodle.png" alt = "waving Magna Doodle image">
-              My mom claims she never once had to ask me to do my homework because I was so self-motivated. My test scores earned me financial aid to attend a swanky high school where I met friends with whom I’m still close,
-              but my drive became more about grades than exploring what interested me. In college, I loved my studio art classes as well as the psychology classes I took. I even assisted in an evolutionary biology
-              psych lab (I have great stories here), but family and friends convinced me that road led to poverty &#128556;. Thank goodness this detour ended up pointing me in the direction of Teach for America. More on that shortly.
-              <br>
-              My Public Relations degree taught me how to write and for that I will always be grateful because it was a hard-won
-              lesson and it has proved important in every profession. However, my PR internships and informational interviews failed
-              to inspire me. Luckily, in came a Teach for America recruiter, which changed my life.
-              <br>
-              In Teach for America (TFA), a two-year AmeriCorps program aimed at non-education majors with strong achievements in college, I learned I could survive anything, including being a teacher on the first day of preK, which often
-              resembles a war zone (no really, this is only a slight exaggeration), all while speaking my second language. I had never been around kids so small, let alone been in charge of 22 lives, and that first week was the most challenging week of my life. At each new job,
-              I’ve maintained calm under pressure and there’s no doubt it’s in large part due to the resilience I learned here. And, yes, I grew to love those little people!
-              <br>
-              The second thing I learned was how to ‘backwards plan,’ which was how I wrote an entire curriculum and maintained high standards for my students when the district lacked resources. Backwards planning is setting goals, working backward to create smaller goals and tasks that will lead to the main goals,
-              and measuring students’ progress to make adjustments along the way. This technique is key to any project, and aligns to my work now as a designer in user stories, acceptance criteria, and the iterative process.
-              <br>
-              Finally, TFA stressed the “eternal student” mindset, or “growth mindset,” and cemented this lesson in monthly learning seminars where I was surrounded by some of the brightest people I’ve ever met while we learned about new technology and research and received constructive criticism. Seeing new ways to
-              work smarter and not harder and the message that you can learn and adapt at any age is something I took with me that I think about daily as a designer.
-              <br>
-              I decided after TFA to take a big swing (making up for my pragmatic college approach) and I moved out of state for the first time. I arrived in Los Angeles, hoping to produce shows like those that had inspired me as I grew up; shows with strong female leads like
-              “Veronica Mars,” “30 Rock,” and “Parks and Rec.” Despite people telling me it was impossible with my lack of entertainment experience, I managed to get a gig as a production assistant and worked my way up to TV Development.
-            </p>
-
-            <div class="pic_and_caption">
-                <img class="about_pic" src = "assets/images/bathtub.png" alt = "LA Pic">
-                <p class="sen pic_caption"><strong>Hollywood sans glamour:</strong> Me proving to my mom that I stored up water in the bathtub during a series of rather alarming earthquakes on July 4th. What an Independence Day!
-                </p>
+            <div class="list">
+                  <!-- mobile navigation has icons that web doesn't -->
+                    <ul class="nav_list">
+                      <li><a class="nav_item" id="about1" href="#aboutme1"><img class="mobile_icon" src="assets/images/about_icon.svg" style="width:16px;" alt="bio icon">About Me</a></li>
+                      <div class="separator"></div>
+                      <li><a class="nav_item" id="resume1" href="assets/MBrooks_Resume_22.pdf" target="_blank"><img class="mobile_icon" src="assets/images/resume_icon.svg" style="width:18px;" alt="resume icon">Resume</a></li>
+                      <div class="separator"></div>
+                      <li><a href="#contactme1" id="contact1" class="nav_item"><img class="mobile_icon" src="assets/images/contact_icon.svg" style="width:15px;" alt="contact icon">Contact</a></li>
+                    </ul>
             </div>
 
-            <p class = "about_text">That’s when I had the epiphany that I was more fulfilled during the day creating Google Sheets hacks, researching trends, and creating assets in Photoshop than I was reading TV scripts.
-              Again, my brain was steering back towards design and tech. This time, I took the hint.
-            </p>
+          </div>
 
-            <div>
-              <h3 class="about sen">Finally...</h3>
-            </div>
+          <div class = "about">
 
-            <p class="about_text">I told my friend that evening about my epiphany, and what I wanted from a career:  a chance to use my natural talent for design, technology, research, and interpersonal communication. I thank my lucky stars that my friend happened to have just caught up with her friend in UX Design. “Oh,
-              I actually know someone who does that!” she said. &#129327; I scheduled my first informational interview with the seasoned designer (shout out to Andrea!), and soon enrolled in my first UX class. I haven’t looked back since.
-            </p>
 
-            <div class="pic_and_heading">
-                <img class="about_pic" src = "assets/images/andy.png" alt = "photo of my dog">
-                <p class="about sen">My dog salutes you for reaching the end of this!
+            <h1 class="page-heading centered">About Me</h1>
+
+            <div class="card">
+
+                <div class="photo_and_intro">
+
+                    <img class="profilepic" src = "assets/images/Profile_pic.png" alt = "my picture">
+
+                    <div class="aboutme_heading">
+                        <h2 class="card-heading">"Hi! I'm Madeleine."</h2>
+                        <h3 class="title_caption"><em>Narrator: She waves enthusiastically</em></h3>
+                    </div>
+
+                </div>
+
+                <p class = "about_text">I've always loved creating! As a kid driving back and forth all the time across Texas - note: Texas is huge, i.e. lots of driving! - my Magna Doodle kept me sane. As I grew up, the Magna Doodle was upgraded
+                  to oil paints on canvas, then Photoshop, then Tilt Brush, then Figma, but my pure joy in bringing visuals to life never changed. (Magna Doodle, I still love you.) That said, ‘art’ or ‘design’ were never introduced to me as careers.
+                  Luckily, this worked out in my favor… eventually. By the time I set my sights on UX Design, I got to roll more than just my love of design into a career. I found that UX Design combined my passion for psychology, learning and teaching
+                  languages, exploring technology, and a pursuit of efficiency.
                   <br>
-                  Thank you! - <span class="cursive">Madeleine</span>
+                  <br>
+                  <img class="magnadoodle" src = "assets/images/magnadoodle.png" alt = "waving Magna Doodle image">
+                  My mom claims she never once had to ask me to do my homework because I was so self-motivated. My test scores earned me financial aid to attend a swanky high school where I met friends with whom I’m still close,
+                  but my drive became more about grades than exploring what interested me. In college, I loved my studio art classes as well as the psychology classes I took. I even assisted in an evolutionary biology
+                  psych lab (I have great stories here), but family and friends convinced me that road led to poverty &#128556;. Thank goodness this detour ended up pointing me in the direction of Teach for America. More on that shortly.
+                  <br>
+                  <br>
+                  My Public Relations degree taught me how to write and for that I will always be grateful because it was a hard-won
+                  lesson and it has proved important in every profession. However, my PR internships and informational interviews failed
+                  to inspire me. Luckily, in came a Teach for America recruiter, which changed my life.
+                  <br>
+                  <br>
+                  In Teach for America (TFA), a two-year AmeriCorps program aimed at non-education majors with strong achievements in college, I learned I could survive anything, including being a teacher on the first day of preK, which often
+                  resembles a war zone (no really, this is only a slight exaggeration), all while speaking my second language. I had never been around kids so small, let alone been in charge of 22 lives, and that first week was the most challenging week of my life. At each new job,
+                  I’ve maintained calm under pressure and there’s no doubt it’s in large part due to the resilience I learned here. And, yes, I grew to love those little people!
+                  <br>
+                  <br>
+                  The second thing I learned was how to ‘backwards plan,’ which was how I wrote an entire curriculum and maintained high standards for my students when the district lacked resources. Backwards planning is setting goals, working backward to create smaller goals and tasks that will lead to the main goals,
+                  and measuring students’ progress to make adjustments along the way. This technique is key to any project, and aligns to my work now as a designer in user stories, acceptance criteria, and the iterative process.
+                  <br>
+                  <br>
+                  Finally, TFA stressed the “eternal student” mindset, or “growth mindset,” and cemented this lesson in monthly learning seminars where I was surrounded by some of the brightest people I’ve ever met while we learned about new technology and research and received constructive criticism. Seeing new ways to
+                  work smarter and not harder and the message that you can learn and adapt at any age is something I took with me that I think about daily as a designer.
+                  <br>
+                  <br>
+                  I decided after TFA to take a big swing (making up for my pragmatic college approach) and I moved out of state for the first time. I arrived in Los Angeles, hoping to produce shows like those that had inspired me as I grew up; shows with strong female leads like
+                  “Veronica Mars,” “30 Rock,” and “Parks and Rec.” Despite people telling me it was impossible with my lack of entertainment experience, I managed to get a gig as a production assistant and worked my way up to TV Development.
+                  <br>
+                
                 </p>
+
+                <div class="pic_and_caption">
+                    <img class="about_pic" src = "assets/images/bathtub.png" alt = "LA Pic">
+                    <p class="sen pic_caption"><strong>Hollywood sans glamour:</strong> Me proving to my mom that I stored up water in the bathtub during a series of rather alarming earthquakes on July 4th. What an Independence Day!
+                    </p>
+                </div>
+
+                <p class = "about_text">
+
+                  <br>
+                  That’s when I had the epiphany that I was more fulfilled during the day creating Google Sheets hacks, researching trends, and creating assets in Photoshop than I was reading TV scripts.
+                  Again, my brain was steering back towards design and tech. This time, I took the hint.
+                </p>
+
+                <div>
+                  <h3 class="about sen">Finally...</h3>
+                </div>
+
+                <p class="about_text">I told my friend that evening about my epiphany, and what I wanted from a career:  a chance to use my natural talent for design, technology, research, and interpersonal communication. I thank my lucky stars that my friend happened to have just caught up with her friend in UX Design. “Oh,
+                  I actually know someone who does that!” she said. &#129327; I scheduled my first informational interview with the seasoned designer (shout out to Andrea!), and soon enrolled in my first UX class. I haven’t looked back since.
+                </p>
+
+                <div class="pic_and_heading">
+                    <img class="about_pic" src = "assets/images/andy.png" alt = "photo of my dog">
+                    <p class="about sen">My dog salutes you for reaching the end of this!
+                      <br>
+                      Thank you! - <span class="cursive">Madeleine</span>
+                    </p>
+                </div>
+
+        <!-- end of Card div -->
             </div>
 
-    <!-- end of Card div -->
+        <!-- end of About div -->
         </div>
 
-    <!-- end of About div -->
-    </div>
+        <!-- footer -->
+        <div class="footer">
+             <div class="footer-content">
+               <p class="footer-heading">Click below for more</p>
+             </div>
 
-    <!-- footer -->
-    <div class="footer">
-         <div class="footer-content">
-           <p class="footer-heading">Click below for more</p>
-         </div>
+           <!-- clickable social icons -->
+             <div class="social full-width">
+                <ul class="icons">
+                    <li class="linkedin">
+                        <a href="http://www.linkedin.com/in/madeleinebrooks">
+                           <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                     </li>
+                     <li class="github">
+                        <a href="https://github.com/madeleinemb">
+                           <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                     </li>
+                     <li class="email">
+                        <a href="mailto:madeleineut@gmail.com">
+                           <ion-icon name="mail-outline"></ion-icon>
+                        </a>
+                     </li>
+                </ul>
+                <div class="caption">&copy; 2020 Madeleine Brooks – Designed and coded by hand.</div>
 
-       <!-- clickable social icons -->
-         <div class="social full-width">
-            <ul class="icons">
-                <li class="linkedin">
-                    <a href="http://www.linkedin.com/in/madeleinebrooks">
-                       <ion-icon name="logo-linkedin"></ion-icon>
-                    </a>
-                 </li>
-                 <li class="github">
-                    <a href="https://github.com/madeleinemb">
-                       <ion-icon name="logo-github"></ion-icon>
-                    </a>
-                 </li>
-                 <li class="email">
-                    <a href="mailto:madeleineut@gmail.com">
-                       <ion-icon name="mail-outline"></ion-icon>
-                    </a>
-                 </li>
-            </ul>
-            <div class="caption">&copy; 2020 Madeleine Brooks – Designed and coded by hand.</div>
+             </div>
 
-         </div>
+      <!-- end of footer -->
+        </div>
 
-  <!-- end of footer -->
-    </div>
-
-<!-- end of Lupl content -->
-  </div>
+    <!-- end of home content -->
+      </div>
 
 
  <!-- SCRIPTS -->
