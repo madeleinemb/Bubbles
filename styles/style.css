@@ -34,7 +34,7 @@ html {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.18);
 }
 
-.btn.primary a {
+a.btn.primary {
 	color: #FFFFFF;
 }
 
@@ -93,7 +93,7 @@ h1 {
 /* Satellite Page Typography Modifications */
 
 .sat h1 {
-	font-family: 'Sen', sans-serif;
+	/* font-family: 'Sen', sans-serif; */
 	font-size: 22px;
 	/* font-weight: 600; */
 }
@@ -123,6 +123,19 @@ h6 {
 	font-weight: 500;
 	font-style: italic;
 	line-height: 21px;
+}
+
+em {
+	font-style: italic;
+}
+
+.sen {
+	font-family: 'Sen', sans-serif;
+}
+
+.pic_caption {
+	font-size: 12px;
+	line-height: 14px;
 }
 
 /* nav lefthand name styling */
@@ -199,6 +212,11 @@ h6 {
 
 .centered {
 	margin: 0px auto;
+	text-align: center;
+}
+
+strong {
+	font-weight: bold;
 }
 
 
@@ -208,12 +226,15 @@ h6 {
 .navigation {
 	width: 100vw;
 	height: auto;
+	position: sticky;
+	top: 0;
+	z-index: 99;
 }
 
 .list {
 	width: 100vw;
 	margin-top: -5px;
-	z-index: 0;
+	z-index: 1;
 }
 
 .nav_list {
@@ -250,10 +271,11 @@ h6 {
 	flex-direction: column;
 	align-items: flex-start;
 	padding: 9px 22px;
-	position: relative;
+	position: sticky;
+	top: 0;
 	z-index: 100;
 	width: 100%;
-	height: 80px;
+	/* height: 80px; */
 	background: #5BDCFF;
 	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.35);
 }
@@ -273,10 +295,10 @@ a:visited {
 /* Satellite pages Navigation Modifications */
 /************/
 			.sat .nav {
-				height: 46px;
+				/* height: 46px; */
 			}
 
-			.job_title {
+			.sat .job_title {
 				display: none;
 			}
 
@@ -356,6 +378,16 @@ a:visited {
 	padding-right: 5px;
 }
 
+.anchor {
+	padding-top: 40px;
+	margin-top: -50px;
+	}
+
+#about-a {
+	padding-top: 60px;
+	margin-top: -60px;
+}
+
 
 /* ********************************** */
 /* ----END OF GENERAL SECION----- */
@@ -401,24 +433,6 @@ a:visited {
 	background: white;
 }
 
-/* #Lupl_pic {
-	background-image: url("/assets/images/Lupl_image.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-}
-
-#Deskspace_pic {
-	background-image: url("/assets/images/ds_preview.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-#HydroApps_pic {
-	background-image: url("/assets/images/water_drop_bringing_aquatics.jpg");
-	background-repeat: no-repeat;
-	background size: cover;
-} */
 
 .summary {
 	padding: 20px 16px 48px 16px;
@@ -475,10 +489,10 @@ a:visited {
 }
 
 .bubbles {
-	background-image: url("/assets/images/About_bg.png");
+	background-image: url("/assets/images/About_BG_Mobile.png");
 	background-size: cover;
 	background-repeat: no-repeat;
-	padding-bottom: 20px;
+	padding-bottom: 42px;
 }
 
 .white_column {
@@ -501,10 +515,14 @@ a:visited {
 	border: 3px #03B5E5 solid;
 }
 
-.photo_and_intro {
+.home .photo_and_intro {
 	display: flex;
 	flex-direction: row;
-	margin: 22px 0px;
+	margin: 10px 0px 0px 0px;
+}
+
+.home .photo_and_intro .image {
+	align-self: flex-start;
 }
 
 .image {
@@ -533,6 +551,10 @@ a:visited {
 	text-decoration: underline;
 	color: #4D1195 !important;
 	padding-left: 1.5%;
+}
+
+.conclusion {
+	color: #4D1195 !important;
 }
 
 .contact-text > * {
@@ -594,61 +616,98 @@ a:visited {
 
 
 
-/* *************ABOUT********************* */
+/* *************ABOUT FULL PAGE ********************* */
 /* ------------------------------------ */
+
 
 .about {
 	margin: 0px 5%;
 	font-size: 14px;
 	line-height: 18px;
-	/* font-family: 'Red Hat Display', sans-serif; */
-}
-
-.about .page-heading {
-	margin: 40px auto 20px auto;
-	text-align: center;
-}
-
-.about .photo_and_intro {
-	width: 100vw;
-	margin-bottom: 20px;
-}
-
-.aboutme_heading {
-	flex-grow: 3;
 	flex-wrap: wrap;
 }
 
-.profilepic {
-	flex-shrink: 3;
-	width: 100px;
-	object-fit: contain;
-	margin-right: 20px;
+.about .card {
+	margin-right: 0px;
 }
 
-.aboutme_heading,
+.aboutme_heading {
+	margin: 40px 0px 20px 0px;
+}
+
+.about .title_caption {
+	line-height: 22px;
+}
+
+.profilepic {
+	width: 35vw;
+	object-fit: contain;
+	margin: 0px 30px 20px 0px;
+	float: left;
+}
+
 .card-heading {
 	font-family: 'Red Hat Display', sans-serif;
 	font-size: 20px;
 }
 
-.about_text {
-	float: left;
-}
-
 .magnadoodle {
 	transform: rotate(20deg);
 	float: right;
-	margin-right: -10px;
+	margin: 10px -10px 10px 0px;
 	width: 50vw;
+	padding: 1vw;
+	z-index: -1 !important;
+	overflow: hidden;
 }
 
 .pic_and_caption {
 	display: flex;
 	float: right;
-	flex-direction: column;
+	width: 90vw;
+	margin: 40px auto 40px auto;
+	padding: 20px;
+	border: 3px #F46DED solid;
+	border-radius: 10px;
+	align-items: flex-start;
 }
 
+.about_pic {
+	width: 40vw;
+	margin-right: 20px;
+	object-fit: contain;
+}
+
+.space {
+	padding-right: 8px;
+}
+
+.clear {
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+.conclusion {
+	margin: 40px 0px 10px 0px;
+}
+
+
+.pic_and_heading {
+	display: flex;
+	flex-direction column;
+	width: 90vw;
+	margin: 40px auto 40px auto;
+	padding: 20px;
+	border: 3px #F46DED solid;
+	border-radius: 10px;
+}
+
+#wrapped {
+	display: none;
+}
 
 
 /* HERO IMAGE FIT MEDIA QUERIES */
@@ -660,6 +719,7 @@ a:visited {
 		background-repeat: no-repeat;
 		background-size: 100%;
 		min-height: 425px;
+		background-position-y: 0;
 	}
 }
 
@@ -667,6 +727,7 @@ a:visited {
 	.home .hero {
 		background-image: url("/assets/images/HeroImage_large.png");
 		max-height: 500px;
+		background-position-y: -20px;
 	}
 
 	.home .hero_text {
@@ -686,8 +747,9 @@ a:visited {
 	@media screen and (min-width: 600px) {
 		.home	.hero {
 			background-image: url("/assets/images/HeroImage_tablet.png");
-			background-size: 118%;
-			max-height: 550px;
+			background-size: contain;
+			min-height: 388px;
+			background-position-y: 0;
 		}
 
 		#Lupl_pic {
@@ -696,6 +758,12 @@ a:visited {
 
 }
 
+@media screen and (min-width: 700px) {
+	.home	.hero {
+		background-image: url("/assets/images/HeroImage_tablet.png");
+		background-size: cover;
+	}
+}
 
 				/* ------------------------------ */
 				/* --TABLET ADJUSTMENTS---------------------------- */
@@ -772,7 +840,7 @@ a:visited {
 					align-content: center;
 					display: flex;
 					background: #5BDCFF;
-					box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.35);
+					box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
 				}
 
 				.nav {
@@ -844,7 +912,7 @@ a:visited {
 				.home .hero {
 					background-image: url("/assets/images/HeroImage_large_tablet.png");
 					background-size: 118%;
-					max-height: 500px;
+					min-height: 400px;
 				}
 
 				.home .hero_text {
@@ -853,7 +921,6 @@ a:visited {
 
 				#mywork {
 					margin: -128px 9% 32px 9%;
-					margin: inherit 9%;
 				}
 
 				.desktop-only.case_title_flex {
@@ -940,13 +1007,117 @@ a:visited {
 					font-size: 22px;
 				}
 
+				.bubbles {
+					background-image: url("/assets/images/About_bg_desktop.png");
+				}
 
+				/* ABOUT ****************/
+				/***********/
+
+				#wrapit {
+					display: block;
+					float: none;
+					margin-top: 40px;
+					/* font-size: 14px; */
+				}
+
+				#dont {
+					display: none;
+				}
+
+				/* .para1 {
+					margin: 20px 0px 40px 0px;
+				} */
+
+				.aboutme_heading {
+					display: block;
+					/* margin-right: 12.5%; */
+					margin: 60px 0px 40px 0px;
+				}
+
+				.sat .nav {
+					height: auto;
+				}
+
+				.about {
+					margin: 0px 12.5%;
+				}
+
+				.sat .job_title {
+					display: contents;
+				}
+
+				.title_text {
+					padding-right: 10px;
+				}
+
+				.photo_and_intro {
+					display: block;
+					width: auto;
+					margin: 0px;
+				}
+
+				.magnadoodle {
+					width: 40vw;
+				}
+
+				/* .about .page-heading {
+					margin: 60px auto 40px auto;
+				} */
+
+				.card-heading {
+					margin-bottom: 20px;
+				}
+
+				.profilepic {
+					/* width: 20vw; */
+					float: left;
+					width: 30vw;
+					margin: 0px;
+					padding: 0px 5vw 3vw 0px;
+				}
+
+				.about .title_caption {
+					align-self: flex-end;
+				}
+
+				.about_pic {
+					width: 35vw;
+					margin: 0px 0px 20px 0px;
+				}
+
+				.pic_and_caption {
+					text-align: center;
+					flex-direction: column;
+					align-items: center;
+					width: auto;
+					padding: 35px;
+					/* margin: 0px 50px 40px 50px; */
+					float: none;
+					/* margin-top: 0px;
+					margin-right: 30px; */
+				}
+
+				.pic_caption {
+					width: 35vw;
+					text-align: center;
+				}
+
+				.conclusion {
+					margin: 50px 0px 20px 0px;
+				}
+
+				.pic_and_heading {
+					flex-direction: column;
+					align-items: center;
+					width: auto;
+					padding: 35px;
+					/* margin: 0px 50px 40px 50px; */
+				}
 
 
 				/* CONTACT ME PAGE *************************************** */
 				/* ******************************************************* */
-
-
 
 
 
@@ -962,12 +1133,40 @@ a:visited {
 
 						/* DESKTOP TYPOGRAPHY */
 
+						.sat h1 {
+							font-size: 30px;
+						}
+
 						h2 {
 							font-size: 30px;
 						}
 
+						h4 {
+							font-size: 20px;
+						}
+
+						h6 {
+							font-size: 16px;
+						}
+
+						.card-heading {
+							font-size: 30px;
+							font-weight: 700;
+							line-height: 30px;
+						}
+
 						.title_text h2 {
 							font-size: 30px;
+						}
+
+						.about .title_caption {
+							font-size: 22px;
+							line-height: 28px;
+						}
+
+						.about_text {
+							font-size: 16px;
+							line-height: 22px;
 						}
 
 						.fancy {
@@ -1010,6 +1209,7 @@ a:visited {
 							background-image: url("/assets/images/Desktop_hero_image.png");
 							background-size: 100%;
 							min-height: 500px;
+							background-position-y: -20px;
 						}
 
 						.name {
@@ -1048,7 +1248,7 @@ a:visited {
 						}
 
 						#Lupl_pic {
-								max-height: none;
+								max-height: 415px;
 								object-fit: cover;
 							}
 
@@ -1070,8 +1270,11 @@ a:visited {
 
 
 						.details_container {
-
 							margin: 30px 0px 0px 0px;
+						}
+
+						#Lupl .details_container {
+							margin: 0px;
 						}
 
 						.summary_no_details {
@@ -1097,21 +1300,80 @@ a:visited {
 						}
 
 						.outlined_title {
+							margin-top: 0px;
 							height: 142px;
 						}
 
 						/* About Section of Homepage */
 						.bubbles {
 							background-image: url("/assets/images/About_bg_desktop.png");
+							background-size: 130%;
+							background-position-x: center;
+						}
+
+						.image {
+							max-width: 140px;
+							min-width: auto;
+						}
+
+						/* ABOUT FULL PAGE *****************************/
+						/**********************************/
+
+
+
+						.about_bg {
+							background-image: url("/assets/images/AboutFull_BG_Desktop_faded.png");
+							background-repeat: no-repeat;
+							background-size: cover;
+							overflow: auto;
+						}
+
+						.about .photo_and_intro {
+							width: initial;
+						}
+
+						.card-heading {
+							margin-bottom: 10px;
+						}
+
+						.aboutme_heading {
+							margin: 0px 0px 30px 0px;
+						}
+
+						.about {
+							margin: 0px 20%;
+						}
+
+						.about .card {
+							margin: 40px 0px;
+							background-color: white;
+							padding: 40px 40px 40px 40px;
+							border-radius: 10px;
+						}
+
+						.pic_and_heading {
+							margin-bottom: 0px;
+						}
+
+						.profilepic {
+							width: 25vw;
+						}
+
+						.about_pic,
+						.sen.pic_caption {
+							width: 25vw;
+						}
+
+						.navigation {
+							z-index: 1;
+						}
+
+						.magnadoodle {
+							width: 30vw;
 						}
 
 
 						}
-
-
-
-
-
 
 
 
@@ -1167,11 +1429,6 @@ a:visited {
 											font-weight: 400;
 										}
 
-										/* .case_title_flex,
-										.summary {
-											margin-right: 12.5%;
-										} */
-
 										.case-description {
 											font-size: 16px;
 											line-height: 1.4;
@@ -1186,6 +1443,10 @@ a:visited {
 											margin-left: 0px;
 										}
 
+										#Lupl .details_container {
+											margin: 30px 0px 0px 0px;
+										}
+
 										#mywork {
 											margin: -64px 12.5% 44px 12.5%;
 										}
@@ -1193,6 +1454,10 @@ a:visited {
 										.case_study {
 											margin: 0px 0px 78px 0px;
 											width: 100%;
+										}
+
+										.bubbles {
+											background-size: 120%;
 										}
 
 
@@ -1211,7 +1476,7 @@ a:visited {
 										}
 
 										.home .footer {
-											padding-top: 60px;
+											padding-top: 40px;
 										}
 
 										.footer-content p {
@@ -1222,14 +1487,55 @@ a:visited {
 											font-size: 14px;
 											padding: 0px;
 										}
-									}
 
+										.home .photo_and_intro {
+											justify-content: flex-start;
+										}
+
+										.outlined_title {
+											flex: 1 0 0;
+										}
 
 										/* *********************************** */
 										/* ABOUT ------------------------------- */
 										/* *********************************** */
 
+										/* making photos wrap in text */
 
+										#wrapped {
+											display: block;
+											float: left;
+											width: 25vw;
+											margin: 5vw 5vw 5vw 0px;
+											border: none;
+											padding: 0px;
+											margin: 40px 4vw 3vw 0px;
+										}
+
+										#la {
+											width: 100%;
+											height: 100%;
+											object-fit: contain;
+										}
+
+										#noWrap {
+											display: none;
+										}
+
+										.sen.pic_caption {
+											width: auto;
+										}
+
+									}
+
+
+
+
+
+
+											/* *********************************** */
+											/* HOME BACKGROUND ADJUSTMENTS */
+											/* *********************************** */
 
 												@media screen and (min-width: 1300px) {
 
@@ -1248,6 +1554,10 @@ a:visited {
 
 													.home .hero {
 														min-height: 600px;
+													}
+
+													.about .card {
+														padding: 40px 60px 40px 60px;
 													}
 
 												}
@@ -1361,11 +1671,10 @@ a:visited {
 																					}
 
 																					.image {
-																						max-width: 186px;
-																						flex-grow: 1;
+																						flex: 1 3 0;
 																					}
 
-																					.photo_and_intro {
+																					.home .photo_and_intro {
 																						display: flex;
 																						flex-direction: row;
 																						margin: 22px 0px;
@@ -1374,7 +1683,7 @@ a:visited {
 																					}
 
 																					.outlined_title {
-																						flex-grow: 2;
+																						flex: 4 1 0;
 																					}
 
 

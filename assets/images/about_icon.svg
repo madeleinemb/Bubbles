@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 26.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 26.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
 <style type="text/css">
-	.st0{clip-path:url(#SVGID_00000170243723659150599400000006876594554033220285_);}
-	.st1{fill:#5B5B5B;}
-	.st2{fill:#333333;}
+	.st0{clip-path:url(#SVGID_00000030470544938058553380000006378652851069701311_);}
+	.st1{fill:#333333;}
 </style>
 <g>
-	<defs>
-		<circle id="SVGID_1_" cx="50" cy="50" r="50"/>
-	</defs>
-	<clipPath id="SVGID_00000118392964183195629280000003510987917560844965_">
-		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
-	</clipPath>
-	<g style="clip-path:url(#SVGID_00000118392964183195629280000003510987917560844965_);">
-		<path class="st1" d="M63.2,57.7c10-7.2,12.2-21.1,5-31.1s-21.1-12.2-31.1-5s-12.2,21.1-5,31.1c1.4,2,3.2,3.7,5.1,5.1
-			c-16,3-27.5,11.3-27.5,21.1c0,12.3,18.2,22.3,40.7,22.3s40.7-10,40.7-22.3C91.2,69,79.5,60.6,63.2,57.7z"/>
-		<path class="st2" d="M50,5c24.9,0,45,20.1,45,45S74.9,95,50,95S5,74.9,5,50C5,25.2,25.2,5,50,5 M50,0C22.4,0,0,22.4,0,50
-			s22.4,50,50,50s50-22.4,50-50S77.6,0,50,0z"/>
+	<g>
+		<defs>
+			<circle id="SVGID_1_" cx="50" cy="50" r="50"/>
+		</defs>
+		<clipPath id="SVGID_00000050646267134406930440000007150819653308976536_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<g style="clip-path:url(#SVGID_00000050646267134406930440000007150819653308976536_);">
+			<path class="st1" d="M61,58c8.3-6,10.1-17.5,4.1-25.7s-17.5-10.1-25.7-4.1s-10.1,17.5-4.1,25.7c1.2,1.7,2.6,3.1,4.2,4.2
+				c-13.2,2.5-22.8,9.4-22.8,17.5C16.7,85.7,31.8,94,50.4,94s33.7-8.3,33.7-18.5C84.2,67.3,74.5,60.4,61,58z"/>
+			<path class="st1" d="M50,7.7c23.4,0,42.3,18.9,42.3,42.3S73.4,92.3,50,92.3S7.7,73.4,7.7,50C7.7,26.7,26.7,7.7,50,7.7 M50,0
+				C22.4,0,0,22.4,0,50s22.4,50,50,50s50-22.4,50-50S77.6,0,50,0z"/>
+		</g>
 	</g>
 </g>
 </svg>
