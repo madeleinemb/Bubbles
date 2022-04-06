@@ -86,17 +86,22 @@ body {
 }
 
 h1 {
+	font-size: 36px;
+	font-weight: bold;
+}
+
+/* h1 {
 	font-size: 28px;
 	font-weight: 600;
-}
+} */
 
 /* Satellite Page Typography Modifications */
 
-.sat h1 {
-	/* font-family: 'Sen', sans-serif; */
+/* .sat h1 {
+	font-family: 'Sen', sans-serif;
 	font-size: 22px;
-	/* font-weight: 600; */
-}
+	font-weight: 600;
+} */
 
 h2 {
 	font-family: 'Sen', sans-serif;
@@ -133,6 +138,10 @@ em {
 	font-family: 'Sen', sans-serif;
 }
 
+.rh {
+	font-family: 'Red Hat Display', sans-serif;
+}
+
 .pic_caption {
 	font-size: 12px;
 	line-height: 14px;
@@ -165,7 +174,6 @@ em {
 }
 
 .hero_text {
-	font-family: 'Red Hat Display', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 }
@@ -216,8 +224,38 @@ em {
 }
 
 strong {
+	font-weight: 700;
+}
+
+.box_label {
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 20px;
+	background-color: white;
+}
+
+.box_text {
+	line-height: 20px;
+}
+
+.app_description strong {
+	font-family: 'Sen', sans-serif;
+}
+
+.app_description {
+	line-height: 22px;
+}
+
+.contents li{
+	font-size: 22px;
 	font-weight: bold;
 }
+
+.small {
+	font-size: 18px;
+}
+
+
 
 
 
@@ -228,7 +266,7 @@ strong {
 	height: auto;
 	position: sticky;
 	top: 0;
-	z-index: 99;
+	z-index: 9999;
 }
 
 .list {
@@ -287,9 +325,19 @@ strong {
 /* NAVIGATION LINK STYLES ***************************** */
 
 
-a:link,
-a:visited {
+.navigation a:link,
+.navigation a:visited {
 	color: #313131;
+}
+
+.sat .navigation a:link,
+.sat .navigation a:visited {
+	color: #313131;
+}
+
+.sat a:link,
+.sat a:visited {
+	color: #4D1195;
 }
 
 /* Satellite pages Navigation Modifications */
@@ -383,9 +431,46 @@ a:visited {
 	margin-top: -50px;
 	}
 
-#about-a {
-	padding-top: 60px;
-	margin-top: -60px;
+.sat .anchor {
+	padding: 120px 0;
+	margin: -120px 0;
+}
+
+/* CLEAR FLOATS */
+.clear {
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Box Styles */
+
+
+.box_label {
+	padding: 3px 16px;
+	border-radius: 10px;
+	border: solid #03B5E5 2px;
+	margin-left: 10px;
+	display: inline-block;
+}
+
+.box_text {
+	padding: 30px 20px 30px 20px;
+	margin: 0px 0px 20px 0px;
+	border: solid #03B5E5 3px;
+	border-radius: 11px;
+}
+
+.dropSha {
+	box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -409,6 +494,12 @@ a:visited {
 
 	/* min-height: 450px; */
 	/* max-height: calc(100vw*2); */
+}
+
+
+#about-a {
+	padding-top: 60px;
+	margin-top: -60px;
 }
 
 .home .hero_text {
@@ -594,9 +685,487 @@ a:visited {
 	width: 100%;
 }
 
+/* ------------------------------------ */
+/* CASE STUDIES GENERAL* */
+/* ------------------------------------ */
+
+.hero_content {
+	margin-bottom: 30px;
+}
+
+.box_label {
+	z-index: 9;
+}
+
+.box_text {
+	/* position: absolute;
+	margin-right: 5%; */
+	z-index: -1;
+	margin-top: -16px;
+}
+
+#noShow .box_text {
+	position: relative;
+	visibility: hidden;
+}
+
+.sat {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.sat .large {
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.sat .item {
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.sat .margin {
+	margin: 0px 5%;
+	z-index: 1;
+}
+
+.sat .noMarg {
+	margin: 0 0;
+}
+
+
+
+
+
+/* ------------------------------------ */
+/* LUPL */
+/* ------------------------------------ */
+
+.hero_content .btn.secondary {
+	margin-top: 30px;
+}
+
+
+.sat .hero {
+	margin: 30px 0px 0px 0px;
+}
+
+.case_logo {
+	width: 35%;
+	margin-right: 20px;
+}
+
+.case_preview {
+	display: none;
+}
+
+.case_logo {
+	float: left;
+}
+
+.contents li{
+	margin: 16px 0px;
+}
+
+.table_of_contents {
+	margin: 40px 0 60px 2%;
+}
+
+.timeline {
+	position: relative;
+	overflow: hidden;
+}
+
+
+.timeline:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 8px;
+	margin-left: 4.5%;
+	width: 3px;
+	height: 98.8%;
+	background: #03B5E5;
+	z-index: 1;
+}
+
+.timeline-block {
+	width: 93%;
+	margin-bottom: 30px;
+}
+
+.bullet {
+	display: flex;
+	margin-bottom: 30px;
+	width: 96%;
+	margin-top: -2px;
+}
+
+.phase-text {
+	font-size: 20px;
+	font-weight: 600;
+	margin: 8px 0px 0px 28px;
+	justify-self: center;
+	width: 100%;
+	z-index: 999;
+}
+
+#phase-text2 {
+	margin-top: 70px;
+}
+
+#phase2 .item {
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+.bullet.phase {
+	margin-bottom: 30px;
+	flex-wrap: wrap;
+}
+
+.gray_bar {
+	background: #E4E4E4;
+	height: 40px;
+	margin: -10px 0px 0px 8px;
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+	overflow: hidden;
+}
+
+.gray_bar_light {
+	background-color: #F1F1F1;
+	height: 40px;
+	width: 100%;
+	margin: 30px 0 0 8px;
+	position: absolute;
+	z-index: -1;
+	overflow: hidden;
+}
+
+
+.little.mark {
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	border: 2px #03B5E5 solid;
+	background-color: #D9FCFB;
+	margin-top: 2px;
+	z-index: 199;
+}
+
+.big.mark {
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	border: 2px #580999 solid;
+	background-color: #8A53FF;
+	margin-top: 2px;
+	z-index: 199;
+}
+
+.mark {
+	margin-right: 10px;
+}
+
+.timeline_content {
+	width: 100%;
+	margin-left: 7%;
+}
+
+.bullet_max {
+	color: #000;
+	font-size: 20px;
+	font-weight: 800;
+}
+
+.bullet_min {
+	font-size: 20px;
+}
+
+.year {
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.timeline_content .quote {
+	font-style: italic;
+}
+
+.emphasis_card {
+	background: white;
+	padding: 32px 16px 48px 16px;
+	box-shadow:  4px 4px 7px rgba(0, 0, 0, 0.25);
+	margin: 40px 7px 56px 0px;
+
+}
+
+.lupl .heading {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.emphasis .heading {
+	margin-bottom: 20px;
+}
+
+.sat .item {
+	margin: 20px 0;
+}
+
+.item p {
+	margin: 20px 0;
+}
+
+.timeline_content ul {
+	list-style-type: disc;
+	list-style-position: inside;
+	margin: 15px 0px 35px 8px;
+}
+
+.time-img {
+	width: 100%;
+}
+
+#scroll_img {
+	width: 100%
+}
+
+
+#emails {
+  width: calc(100% + 20px); // twice the value of the parent's padding
+  margin-left: -10px; // -1 * parent's padding
+	margin-top: 30px;
+	margin-left: -10%;
+	position: relative;
+	z-index: 999;
+}
+
+.triangle {
+	width: 92vw;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	position: relative;
+	z-index: 1;
+	min-height: 30px;
+	max-height: 250px;
+}
+
+.up {
+	background-image: url("/assets/images/TriangleUp.png");
+	margin: -15px auto 0 auto;
+}
+
+.down {
+	background-image: url("/assets/images/TriangleDown.png");
+	margin: -5px auto 0 auto;
+}
+
+.shad_cont {
+	position: relative;
+	padding: 20px 10px;
+}
+
+.marg-top {
+	margin-top: 40px;
+}
+
+.marg-bot {
+	margin-bottom: 40px;
+}
+
+#doc_profile {
+	margin-bottom: 40px;
+}
+
+#docHeading,
+#teamsHeading {
+	line-height: 1.4
+}
+
+#doc_profile_card {
+	box-shadow: 0px 1px 15px #F46DED;
+}
+
+.card {
+	margin: -4px auto 0 auto;
+	border-radius: 11px;
+	background-repeat: no-repeat;
+	width: 93vw;
+	background-color: white;
+	padding: 40px 40px;
+	z-index: 99;
+	position: relative;
+}
+
+.sen_card {
+	background-color: #D9FCFB;
+	border-radius: 11px;
+	margin: 40px 0px;
+	padding: 20px;
+}
+
+.phase2 .caption {
+	color: #8F8F8F;
+	font-size: 14px;
+}
+
+.phase2 .card-head {
+	font-size: 20px;
+	font-weight: 800;
+}
+
+.box_content {
+	margin: 40px 0px 20px 0px;
+}
+
+.phase2 .cat-head {
+	font-family: 'Red Hat Display', sans-serif;
+	font-weight: 600;
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+
+.left_column {
+	margin: 40px 0;
+}
+
+.img_text p {
+	margin: 10px 0 20px 0;
+}
+
+.img_text {
+	margin: 40px 0px;
+}
+
+#feedback_dp {
+	margin-top: 60px;
+}
+
+.line {
+	width: 6px;
+	border-radius: 4px;
+}
+
+.short {
+	margin-bottom: 20px;
+	margin-top: 20px;
+	height: 35px;
+}
+
+.blue_bg {
+	background-color: #03B5E5;
+}
+
+.pie_image {
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.pie_text {
+	color: #4D1195;
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.num {
+	font-size: 22px;
+}
+
+.pie {
+	width: 45vw;
+	margin-right: 20px;
+}
+
+#team_lead .gray_bar {
+	margin: 0 0 0 8px;
+}
+
+#team_lead .bullet {
+	padding-top: 10px;
+}
+
+.result img:nth-child(2) {
+	margin-top: 20px;
+}
+
+#team_lead .box_text {
+	margin-bottom: 30px;
+}
+
+#team_lead .item p:last-child {
+	margin-bottom: 40px;
+}
+
+#jrdesigner .item p:last-child {
+	margin-bottom: 60px;
+}
+
+.marg-bot-l {
+	margin-bottom: 60px;
+}
+
+.up.blue {
+	background-image: url("/assets/images/TriangleUp-blue.png");
+	margin: -8px auto 0 auto;
+}
+
+.down.blue {
+	background-image: url("/assets/images/TriangleDown-blue.png");
+}
+
+#teams_card {
+	box-shadow: 0px 1px 15px #03B5E5;
+	}
+
+#Teams_ex {
+	margin-bottom: 60px;
+}
+
+#how {
+	margin-top: 50px;
+}
+
+.bullet_max p:nth-child(1) {
+	margin-bottom: 10px;
+}
+
+#celebration .bullet {
+	height: 200px;
+	align-items: center;
+}
+
+#conclusion .large {
+	font-size: 20px;
+	line-height: 40px;
+	text-align: center;
+}
+
+#conclusion .left_column {
+	margin: 30px auto;
+}
+
+#conclusion {
+	margin-bottom: 40px;
+}
+
+#conclusion a:link {
+	font-weight: bold;
+}
+
+#small_cel {
+	width: 70vw;
+	margin: 0 auto 80px auto;
+}
+
+
 
 /* ---------------------------------------------- */
-/* *******HydroApps******************************* */
+/* HydroApps */
 /* ---------------------------------------------- */
 
 .gallery {
@@ -680,14 +1249,6 @@ a:visited {
 
 .space {
 	padding-right: 8px;
-}
-
-.clear {
-	content: ".";
-	visibility: hidden;
-	display: block;
-	height: 0;
-	clear: both;
 }
 
 .conclusion {
@@ -1351,6 +1912,8 @@ a:visited {
 							border-radius: 10px;
 						}
 
+
+
 						.pic_and_heading {
 							margin-bottom: 0px;
 						}
@@ -1526,6 +2089,10 @@ a:visited {
 											width: auto;
 										}
 
+										#afterNone {
+											margin-top: 25px;
+										}
+
 									}
 
 
@@ -1622,6 +2189,12 @@ a:visited {
 																						font-size: 22px;
 																					}
 
+																					/* NAV Adjustments */
+																					.nav_item {
+																						margin-left: 64px;
+																					}
+
+																					/******************************/
 																					/* Home page adjustments */
 
 																					.home .hero_text {
@@ -1687,6 +2260,33 @@ a:visited {
 																					}
 
 
-
-
 																				}
+
+																			/* Really really large desktop adjustments ;) */
+																				@media screen and (min-width: 2000px) {
+
+																					/* *********************************** */
+																					/* ABOUT ADJUSTMENTS---------------------------- */
+
+																					#wrapped {
+																						margin: 2vw 5vw 2vw 0px;
+																						width: 20vw;
+																					}
+
+																					.conclusion {
+																						margin-top: 10px;
+																					}
+																				}
+
+																					/* Really really reallllly large desktop adjustments ;) */
+																						@media screen and (min-width: 2300px) {
+
+																							/* *********************************** */
+																							/* ABOUT ADJUSTMENTS---------------------------- */
+
+																							#wrapped {
+																								margin: 2vw 5vw 2vw 0px;
+																								width: 15vw;
+																							}
+
+																						}
