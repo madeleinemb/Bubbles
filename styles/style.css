@@ -782,7 +782,7 @@ strong {
 	position: absolute;
 	top: 0;
 	left: 8px;
-	margin-left: 4.5%;
+	margin-left: 4.7%;
 	width: 3px;
 	height: 98.8%;
 	background: #03B5E5;
@@ -1077,7 +1077,7 @@ strong {
 }
 
 .pie {
-	width: 45vw;
+	width: 35vw;
 	margin-right: 20px;
 }
 
@@ -1107,6 +1107,14 @@ strong {
 
 .marg-bot-l {
 	margin-bottom: 60px;
+}
+
+.marg-small-bot {
+	margin-bottom: 20px;
+}
+
+#resHead {
+	margin: 60px 0px 40px 0px;
 }
 
 .up.blue {
@@ -1141,7 +1149,7 @@ strong {
 
 #conclusion .large {
 	font-size: 20px;
-	line-height: 40px;
+	line-height: 30px;
 	text-align: center;
 }
 
@@ -1160,6 +1168,28 @@ strong {
 #small_cel {
 	width: 70vw;
 	margin: 0 auto 80px auto;
+}
+
+#celebration_bg {
+	background-image: url("/assets/images/Celebration_bg_test.png");
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: contain;
+	margin-top: -100px;
+	height: 300px;
+}
+
+#celebration {
+	margin-top: -180px;
+}
+
+#celeb_mark {
+	flex: 0 0 auto;
+}
+
+#celeb_bullet {
+	text-align: center;
+	width: 100%;
 }
 
 
@@ -1303,6 +1333,12 @@ strong {
 	#Lupl_pic {
 		max-height: 70vw;
 	}
+
+	#celebration {
+		margin-top: -100px;
+	}
+
+
 }
 
 	@media screen and (min-width: 600px) {
@@ -1317,6 +1353,31 @@ strong {
 			max-height: 60vw;
 		}
 
+		#celebration_bg {
+			background-image: url("/assets/images/Celebration_bg_tablet.png");
+			background-size: contain;
+		}
+
+		#celeb_bullet > p {
+			display: inline-block;
+		}
+
+		#celeb_bullet p:first-child {
+			margin-right: 20px;
+		}
+
+		#celebration {
+			margin-top: -189px;
+		}
+
+		.timeline:before {
+			height: 98.9%;
+		}
+
+		#conclusion {
+			margin-top: 0px;
+		}
+
 }
 
 @media screen and (min-width: 700px) {
@@ -1324,6 +1385,7 @@ strong {
 		background-image: url("/assets/images/HeroImage_tablet.png");
 		background-size: cover;
 	}
+
 }
 
 				/* ------------------------------ */
@@ -1680,7 +1742,31 @@ strong {
 				/* CONTACT ME PAGE *************************************** */
 				/* ******************************************************* */
 
+				/* LUPL PAGE *************************************** */
+				/* ******************************************************* */
 
+				.case_logo {
+					width: 25%;
+					margin-right: 30px;
+				}
+
+				#toomuch {
+					width: 60vw;
+					margin: 40px auto;
+				}
+
+				.pie {
+					width: 25vw;
+				}
+
+				#small_cel {
+					margin-top: -80px;
+				}
+
+				#celeb_bullet {
+					font-size: 24px;
+					color: #313131;
+				}
 
 				}
 

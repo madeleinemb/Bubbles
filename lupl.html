@@ -386,10 +386,10 @@
 
                                   <div class="centered img_text">
 
-                                    <img class="imagepreview dropSha" src="assets/images/docprof_clean.png" alt= "Document Profile Clean">
+                                    <a href="assets/images/docprof_clean.png" class="open_image" target="_blank"><img class="imagepreview dropSha" src="assets/images/docprof_clean.png" alt= "Document Profile Clean"></a>
                                     <p class="centered image_heading sen">Clean Version</p>
 
-                                    <img class="imagepreview dropSha" src="assets/images/docprof_annotated.png" alt= "Document Profile Annotated">
+                                    <a href="assets/images/docprof_annotated.png" class="open_image" target="_blank"><img class="imagepreview dropSha" src="assets/images/docprof_annotated.png" alt= "Document Profile Annotated"></a>
                                     <p class="centered image_heading sen">Annotated Version</p>
                                   </div>
 
@@ -402,7 +402,7 @@
 
                 <!-- DOC PROFILE Chat bubble + image -->
 
-                                  <div class="left_column marg-bot marg-top">
+                                  <div class="left_column marg-bot marg-top" id="toomuch">
                                     <img class="imagepreview" src="assets/images/toomuchText.png" alt="Example of feedback image">
                                     <!-- <div class="chat_bubble">
                                       <p class="chat">Too much text.</p>
@@ -440,13 +440,13 @@
 
                 <!-- DOC PROFILE Result Area -->
 
-                                  <h3 class="centered cat-head">Result</h3>
+                                  <h3 class="centered cat-head" id="resHead">Result</h3>
 
                                   <p class="heading">A tab version to give the content more space:</p>
 
                                   <div class="result 2column marg-bot marg-top">
-                                    <img class="time-img dropSha" src="assets/images/tab_version_preview.png" alt="tab version preview image">
-                                    <img class="time-img dropSha" src="assets/images/tab_version_profile.png" alt="tab version profile image">
+                                    <a href="assets/images/tab_version_preview.png" class="open_image" target="_blank"><img class="time-img dropSha marg-small-bot" src="assets/images/tab_version_preview.png" alt="tab version preview image"></a>
+                                    <a href="assets/images/tab_version_profile.png" class="open_image" target="_blank"><img class="time-img dropSha" src="assets/images/tab_version_profile.png" alt="tab version profile image"></a>
                                   </div>
 
                                   <h4 class="centered marg-bot"><em>A few more iterations...</em></h4>
@@ -455,7 +455,7 @@
 
                                   <div class="final">
                                     <h4 class="centered">Final Document Profile screens (as of launch date)</h4><br>
-                                    <img class="time-img dropSha" src="assets/images/DocumentProfile.gif" alt="final document profile gif">
+                                    <a href="assets/images/DocumentProfile.gif" class="open_image" target="_blank"><img class="time-img dropSha" src="assets/images/DocumentProfile.gif" alt="final document profile gif"></a>
                                   </div>
 
                               </div>
@@ -600,7 +600,7 @@
             <!-- end of no margin -->
               </div>
 
-          <div id="celebration_bg">
+            <div id="celebration_bg"></div>
 
       <!-- restarting Margin -->
               <div class="margin">
@@ -614,8 +614,8 @@
                   <!-- Lupl finished bullet_point -->
 
                         <div class ="bullet">
-                              <div class="big mark"></div>
-                              <div class="bullet_max">
+                              <div class="big mark" id="celeb_mark"></div>
+                              <div class="bullet_max" id="celeb_bullet">
                                 <p>
                                 Lupl Launches! <span class="year">&#40;2019&#41;</span>
                                 </p>
@@ -638,7 +638,7 @@
             </div>
 
 
-          </div>
+          <!-- </div> -->
 
   <!-- end of timeline section -->
           </section>
