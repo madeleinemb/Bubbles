@@ -19,7 +19,7 @@
                   <div class="name">
                       <a href="index.html" class="web_title">
                         <div class="title_text">
-                            <h2 >Madeleine Brooks<span class="no-mobile">,</span>
+                            <h2 >Madeleine Brooks<span class="no-mobile">,</span></h2>
                         </div>
                         <div class="job_title">
                               <h2 class="title_caption"> Product Designer</h2>
@@ -109,13 +109,15 @@
               </div>
 
               <div class="col">
+                <a href="assets/DeskSpace_deck.pdf" target="_blank">
                   <img class="imagepreview color_bg" id="Deskspace_pic" src="assets/images/ds_preview.png" alt="Deskspace Screen">
+                </a>
               </div>
 
               <div class="summary col2">
 
                   <div class="desktop-only case_title_flex">
-                    <a href="assets/DeskSpace_deck.pdf"><h3 class="case_title">Deskspace</h3></a>
+                    <a href="assets/DeskSpace_deck.pdf" target="_blank"><h3 class="case_title">Deskspace</h3></a>
                     <p class="badge">UX/UI</p>
                   </div>
 
@@ -139,17 +141,19 @@
 
                 <div class="mobile-only case_title_flex">
                   <a href="hydroapps.html"><h3 class="case_title">HydroApps</h3></a>
-                  <p class="badge">GrDes</p>
+                  <p class="badge mobile-only">GrDes</p>
                 </div>
 
                 <div class="col">
+                  <a href="hydroapps.html">
                     <img class="imagepreview" id="HydroApps_pic" src="assets/images/water_drop_bringing_aquatics.jpg" alt="HydroApps Screen">
+                  </a>
                 </div>
 
                 <div class="summary col2">
                   <div class="desktop-only case_title_flex">
                       <a href="hydroapps.html"><h3 class="case_title">HydroApps</h3></a>
-                      <p class="badge">GrDes</p>
+                      <p class="badge">Graphic Design</p>
                   </div>
                   <div class="summary_no_details">
                       <p class="body_heading">What is it?</p>
@@ -181,7 +185,7 @@
             <div class="white_column" id="about_short">
               <!-- flexbox div container for mobile -->
                 <div class="photo_and_intro">
-                   <img class="image" src="assets/images/bio_pic.png" alt="Photo of Me">
+                   <img class="biopic" src="assets/images/bio_pic.png" alt="Photo of Me">
                    <div class="outlined_title">
                      <h4>"Hi I'm Madeleine."</h4>
                      <h6>Narrator: She waves enthusiastically.</h6>
@@ -204,11 +208,12 @@
 
               <div class="white_column">
 
-                  <div class = "contact-text">
-                    <h3 class = "contact-initial">Let's build something together.</h3>
-                    <h3 class = "contact-secondary">... or chat about design!</h3>
+                  <div class = "contact-text sen">
+                    <p class = "contact-initial">Let's build something together.</h3>
+                    <p class = "contact-secondary">... or chat about design!</h3>
                     <p class = "caption">... or dogs and football!</p>
                   </div>
+
 
                   <form class="contact-form" action="https://formspree.io/xayprdgq" method="POST">
 
@@ -263,22 +268,6 @@
 
       <!-- SCRIPTS -->
 
-      <!-- <script>
-
-          function myFunction(x) {
-              if (x.matches) { // If media query matches
-                pass;
-              } else {
-                const parent = document.getElementsByClassName('title_reverse');
-                parent.replaceWith(...parent.childNodes);
-              }
-            }
-          var x = window.matchMedia("(max-width: 1023px)")
-                myFunction(x) // Call listener function at run time
-                x.addListener(myFunction) // Attach listener function on state changes
-
-      </script> -->
-
       <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 
       <script>
@@ -312,4 +301,57 @@
 
         gtag('config', 'G-JEQHKEELR0');
       </script>
+
+      <!-- REACT SCRIPT - changed for now -->
+          <!-- <script>
+          import React from 'react';
+          import { useForm, ValidationError } from '@formspree/react';
+          function ContactForm() {
+            function handleChange(event) {
+            console.log(event.target.value);
+            }
+
+            const [state, handleSubmit] = useForm("xayprdgq");
+            if (state.succeeded) {
+                return <p>Thanks for joining!</p>;
+            }
+            return (
+                <form onSubmit={handleSubmit}>
+                <label htmlFor="email">
+                  Email Address
+                </label>
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  onChange={handleChange}
+                />
+                <ValidationError
+                  prefix="Email"
+                  field="email"
+                  errors={state.errors}
+                />
+                <textarea
+                  id="message"
+                  name="message"
+                />
+                <ValidationError
+                  prefix="Message"
+                  field="message"
+                  errors={state.errors}
+                />
+                <button type="submit" disabled={state.submitting}>
+                  Submit
+                </button>
+              </form>
+            );
+          }
+          function App() {
+            return (
+              <ContactForm />
+            );
+          }
+          export default App;
+        </script> -->
+
    </body>
