@@ -13,25 +13,49 @@
 
   <body>
 
-      <div class="hydroapps">
 
-          <div class="nav">
-              <a href="index.html" class="web_title">
-                <p class="title_text">Madeleine Brooks,<span class="title_caption">Product Designer</span></p>
-              </a>
-              <ul class="navigation">
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="assets/MBrooks_Resume_22.pdf" target="_blank"><img class="resume-icon" src="assets/images/open_new_win_transparent.png" alt="open in new window">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-          </div>
+          <div class="sat">
+
+              <div class="HydroApps">
+
+                  <div class="navigation">
+
+                      <div class="nav">
+
+                          <div class="name">
+                                <a href="index.html" class="web_title">
+                                    <div class="title_text">
+                                        <h2 >Madeleine Brooks<span class="no-mobile">,</span></h2>
+                                    </div>
+                                    <div class="job_title">
+                                          <h2 class="title_caption"> Product Designer</h2>
+                                    </div>
+                                </a>
+                          </div>
+
+                      </div>
+
+                      <div class="list">
+                            <!-- mobile navigation has icons that web doesn't -->
+                              <ul class="nav_list">
+                                <li><a class="nav_item" id="about1" href="index.html#aboutme1"><img class="mobile_icon" src="assets/images/about_icon.svg" style="width:16px;" alt="bio icon">About Me</a></li>
+                                <div class="separator"></div>
+                                <li><a class="nav_item" id="resume1" href="assets/MBrooks_Resume_22.pdf" target="_blank"><img class="mobile_icon" src="assets/images/resume_icon.svg" style="width:18px;" alt="resume icon">Resume</a></li>
+                                <div class="separator"></div>
+                                <li><a class="nav_item" href="#contactme1" id="contact1"><img class="mobile_icon" src="assets/images/contact_icon.svg" style="width:15px;" alt="contact icon">Contact</a></li>
+                              </ul>
+                      </div>
+
+                  </div>
 
 
           <section class="hero">
 
-              <div class="hero_content">
+              <div class="hero_content hero-marg">
 
-                  <div class="gallery">
+                <div class="flexbox-hero">
+
+                  <div class="gallery case_preview dropSha marg-top" id="haPrev">
                       <img class="mySlides" src="assets/images/water_drop_bringing_aquatics.jpg" alt="FB2 aquatics ad image">
                       <img class="mySlides" src="assets/images/Final_HydroApps_300_orange.gif" alt="300 banner animated">
                       <img class="mySlides" src="assets/images/water_drop_value_statements.jpg" alt="FB2 risk ad image">
@@ -39,12 +63,19 @@
                       <img class="mySlides" src="assets/images/728_Orange.gif" alt="728 orange motion animated">
                   </div>
 
-                  <img class="case_logo" src="assets/images/hydroapps_inline_logo.png" alt="HydroApps Logo">
-
-                  <div class="app_description">
-                      <p class="mission">Mission of the design</p>
-                      <p class="app_summary">Inform potential customers that they no longer need to keep track of paperwork and can instead use an app to manage their aquatics facilities</p>
+                  <div class="app_flex">
+                      <div class="flex-logo mobile-only">
+                        <!-- <p class="logo-txt">HydroApps</p> -->
+                        <img class="case_logo" src="assets/images/HYDROAPPS_logo_sml.png" alt="HydroApps Logo">
+                      </div>
+                      <img class="case_logo no-mobile-block" src="assets/images/hydroapps_inline_logo.png" alt="HydroApps Logo">
+                      <div class="app_description clearfix">
+                          <p class="mission large"><strong>Mission</strong>  &#40;HydroApps&#41;: Inform potential customers that they no longer need to keep track of paperwork and can use an app instead.</p>
+                      </div>
+                      <a href="https://aquaticpros.org/" target="_blank"><p class="btn secondary">See Ad (in the wild)</p></a>
                   </div>
+
+                </div>
 
               </div>
 
@@ -52,11 +83,11 @@
 
               <!-- Beginning of regular content -->
 
-          <section id="steps">
+          <section class="margin" id="steps">
 
-              <h3 class="centered">My Role as Graphic Designer and Content Creator</h3>
+              <h2 class="heading marg-top marg-bot">My Role as Graphic Designer and Content Creator</h2>
 
-              <div class="outlined_card">
+              <div class="outlined_card step">
 
                   <h4>Step 1: <strong>External Discovery</strong></h4>
                   <img class="step_img" src="assets/images/HydroApps__Presence.png" alt="step 1 presence icon">
@@ -64,32 +95,36 @@
 
               </div>
 
-              <div class="outlined_card">
+              <div class="outlined_card step">
 
                   <h4>Step 2: <strong>Internal Discovery</strong></h4>
                   <img class="step_img" src="assets/images/HydroApps__Questions.png" alt="step 2 questions icon">
                   <p class = "step_description">I ask the client questions to define or clarify things like…</p>
-                  <div class="pink_bullets">
-                      <ul>
-                          <div class="left_column1">
-                            <li>Company Mission</li>
-                            <li>Product Purpose</li>
-                            <li>Market Landscape</li>
-                            <li>Target Consumer</li>
-                          </div>
+                  <div class="flex_list">
 
-                          <div class="right_column1">
-                            <li>Message</li>
-                            <li>Branding</li>
-                            <li>Resources</li>
-                            <li>SWOT</li>
-                          </div>
-                      </ul>
+                      <div class="list_left">
+                          <ul id="goals">
+                                <li>Company Mission</li>
+                                <li>Product Purpose</li>
+                                <li>Market Landscape</li>
+                                <li>Target Consumer</li>
+                          </ul>
+                      </div>
+
+                      <div class="list_right">
+                          <ul id="goals2">
+                              <li>Message</li>
+                              <li>Branding</li>
+                              <li>Resources</li>
+                              <li>SWOT</li>
+                          </ul>
+                      </div>
+
                   </div>
 
               </div>
 
-              <div class="outlined_card">
+              <div class="outlined_card step">
 
                   <h4>Step 3: <strong>Crafting the Message</strong></h4>
                   <img class="step_img" src="assets/images/HydroApps__Message.png" alt="step 3 messages icon">
@@ -103,7 +138,7 @@
 
               </div>
 
-              <div class="outlined_card">
+              <div class="outlined_card step">
 
                   <h4>Step 4: <strong>Moodboarding</strong></h4>
                   <img class="step_img" src="assets/images/HydroApps__Moodboard.png" alt="step 4 moodboard icon">
@@ -112,7 +147,7 @@
               </div>
 
 
-              <div class="outlined_card">
+              <div class="outlined_card step">
 
                   <h4>Step 5: <strong>Drafting the Design</strong></h4>
                   <img class="step_img" src="assets/images/HydroApps__Design.png" alt="step 5 drafting the design icon">
@@ -125,7 +160,7 @@
 
               </div>
 
-              <div class="outlined_card">
+              <div class="outlined_card step">
 
                   <h4>Step 6: <strong>Finalizing the Design</strong></h4>
                   <img class="step_img" src="assets/images/HydroApps__Deliverables.png" alt="step 6 deliverables icon">
@@ -136,40 +171,42 @@
           </section>
 
 
-      <!-- end of hydroapps page -->
+      <!-- end of Hydroapps page -->
       </div>
 
-          <!-- footer -->
-          <div class="footer">
-               <div class="footer-content">
-                 <p class="footer-heading">Click below for more</p>
-               </div>
+      <!-- footer -->
+      <div class="footer">
+         <div class="footer-content">
+           <p class="footer-heading">Click below for more</p>
+         </div>
 
-             <!-- clickable social icons -->
-               <div class="social full-width">
-                  <ul class="icons">
-                      <li class="linkedin">
-                          <a href="http://www.linkedin.com/in/madeleinebrooks">
-                             <ion-icon name="logo-linkedin"></ion-icon>
-                          </a>
-                       </li>
-                       <li class="github">
-                          <a href="https://github.com/madeleinemb">
-                             <ion-icon name="logo-github"></ion-icon>
-                          </a>
-                       </li>
-                       <li class="email">
-                          <a href="mailto:madeleineut@gmail.com">
-                             <ion-icon name="mail-outline"></ion-icon>
-                          </a>
-                       </li>
-                  </ul>
-                  <div class="caption">&copy; 2020 Madeleine Brooks – Designed and coded by hand.</div>
+         <!-- clickable social icons -->
+         <div class="social full-width">
+            <ul class="icons">
+               <li class="linkedin">
+                  <a href="http://www.linkedin.com/in/madeleinebrooks">
+                     <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+               </li>
+               <li class="github">
+                  <a href="https://github.com/madeleinemb">
+                     <ion-icon name="logo-github"></ion-icon>
+                  </a>
+               </li>
+               <li class="email">
+                  <a href="mailto:madeleineut@gmail.com">
+                     <ion-icon name="mail-outline"></ion-icon>
+                  </a>
+               </li>
+            </ul>
+            <div class="caption">&copy; 2022 Madeleine Brooks – Designed and coded by hand.</div>
+         </div>
+     <!-- end of footer -->
+      </div>
 
-               </div>
 
-        <!-- end of footer -->
-          </div>
+    <!-- end of sat div -->
+  </div>
 
 
 
