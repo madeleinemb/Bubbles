@@ -173,6 +173,11 @@ em {
 
 #design {
 	color: #6a6385;
+	font-size: 30px;
+}
+
+.germ {
+	font-size: 22px;
 }
 
 .fancy {
@@ -1841,6 +1846,10 @@ form select {
 		background-size: cover;
 	}
 
+	.germ {
+		font-size: 30px;
+	}
+
 }
 
 				/* ------------------------------ */
@@ -2019,6 +2028,11 @@ form select {
 
 				#mywork {
 					margin: -128px 9% 32px 9%;
+				}
+
+				.fancy.leftpad {
+					overflow: visible;
+					white-space: nowrap;
 				}
 
 				.desktop-only.case_title_flex {
@@ -2529,9 +2543,9 @@ form select {
 							width: 300px;
 						}
 
-						#design {
-							font-size: 90px;
-
+						#design,
+						.germ {
+							font-size: 40px;
 						}
 
 						.name {
@@ -2630,7 +2644,7 @@ form select {
 						/* About Section of Homepage */
 						.bubbles {
 							background-image: url("/assets/images/About_bg_desktop.png");
-							background-size: 130%;
+							/* background-size: 130%; */
 							background-position-x: center;
 						}
 
@@ -3099,7 +3113,7 @@ form select {
 										}
 
 										.bubbles {
-											background-size: 120%;
+											/* background-size: 120%; */
 										}
 
 
@@ -3322,6 +3336,10 @@ form select {
 														min-height: 600px;
 													}
 
+													.leftpad {
+														padding: 0px 0px 0px 8%;
+													}
+
 													.emphasis_card {
 														padding: 32px 60px 48px 60px;
 													}
@@ -3485,11 +3503,6 @@ form select {
 																						background-position-y: -50px;
 																					}
 
-																					.fancy.leftpad {
-																						overflow: visible;
-																						white-space: nowrap;
-																					}
-
 																					.leftpad {
 																						padding: 0px 0px;
 																					}
@@ -3499,6 +3512,10 @@ form select {
 																						max-width: 950px;
 																					}
 
+																					#design,
+																					.germ {
+																						font-size: 80px;
+																					}
 
 																					#mywork {
 																						margin: -100px 12.5% 0px 12.5%;
