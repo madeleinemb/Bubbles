@@ -2338,13 +2338,14 @@ form select {
 				}
 
 				.HydroApps .case_logo.no-mobile-block {
-					width: 100%;
+					/* width: 100%; */
 					object-fit: contain;
 					flex: 3 0 200px;
 					align-self: flex-start;
 					float: none;
 					max-width: none;
 				}
+
 
 				.prev,
 				.next {
@@ -2983,6 +2984,10 @@ form select {
 							flex: auto;
 						}
 
+						.HydroApps .case_logo.no-mobile-block {
+							width: 100%;
+						}
+
 						.slideshow_full {
 							flex: 1 0 60%;
 							margin-left: 60px;
@@ -3281,6 +3286,10 @@ form select {
 												    margin: 20px 0px 40px 40px;
 													}
 
+													.slide-container {
+														max-width: 660px;
+													}
+
 												}
 
 												@media screen and (min-width: 1400px) {
@@ -3317,6 +3326,7 @@ form select {
 														font-size: 24px;
 													}
 
+
 													.step_description {
 														font-size: 18px;
 														line-height: 1.4;
@@ -3324,6 +3334,7 @@ form select {
 
 													.slideshow-container {
 														height: 360px;
+														max-width: none;
 													}
 
 
