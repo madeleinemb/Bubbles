@@ -172,7 +172,7 @@ em {
 }
 
 #design {
-	color: #827474;
+	color: #6a6385;
 }
 
 .fancy {
@@ -719,8 +719,7 @@ form select {
 }
 
 #mywork {
-	background-color: #F46DED;
-	mix-blend-mode: hard-light;
+	background-color: #F46DED40;
 	margin: -150px 5% 32px 5%;
 }
 
@@ -2532,7 +2531,7 @@ form select {
 
 						#design {
 							font-size: 90px;
-							
+
 						}
 
 						.name {
@@ -3477,7 +3476,7 @@ form select {
 
 																					.home .hero_text {
 																						padding-top: 100px;
-																						max-width: 900px;
+																						max-width: 850px;
 																					}
 
 																					.home .hero {
@@ -3496,7 +3495,7 @@ form select {
 																					}
 
 																					.rightpad {
-																						padding: 0px 0px 0px 17%;
+																						padding: 20px 0px 0px 15%;
 																						max-width: 950px;
 																					}
 
