@@ -2,3 +2,4 @@ node_modules
 trash
 package-lock.json
 .atom-live-server.json
+.DS_Store
