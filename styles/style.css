@@ -3471,10 +3471,6 @@ form select {
 																						max-width: 1100px;
 																					}
 
-																					.rightpad {
-																						max-width: 700px;
-																					}
-
 																					.home .hero {
 																						min-width: 100vw;
 																						min-height: 600px;
@@ -3486,7 +3482,8 @@ form select {
 																					}
 
 																					.rightpad {
-																						padding: 0px 0px 0px 17%;
+																						padding: 0px 0px 0px 23%;
+																						max-width: 750px;
 																					}
 
 
