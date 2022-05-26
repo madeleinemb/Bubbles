@@ -172,7 +172,7 @@ em {
 }
 
 #design {
-	font-size: 90px;
+	color: #827474;
 }
 
 .fancy {
@@ -2530,6 +2530,11 @@ form select {
 							width: 300px;
 						}
 
+						#design {
+							font-size: 90px;
+							padding-left: 50px;
+						}
+
 						.name {
 							align-content: center;
 						}
@@ -3492,7 +3497,7 @@ form select {
 
 																					.rightpad {
 																						padding: 0px 0px 0px 17%;
-																						max-width: 750px;
+																						max-width: 950px;
 																					}
 
 
