@@ -9,7 +9,7 @@
       <link rel="stylesheet" href="styles/style.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Red+Hat+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sen:wght@400;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Red+Hat+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sen:wght@400;700&family=Song+Myung&display=swap" rel="stylesheet">
    </head>
    <body>
 
@@ -47,8 +47,8 @@
             <!-- hero unit -->
           <section class="hero">
               <div class="hero_text rh">
-                   <h1 class="fancy leftpad">De•sign</h1>
-                   <p class="rightpad">I think of design as an artistic language. Through interactions, questions, and research we learn how to better use ‘Design’ to translate between you and your users.</p>
+                  <h1 class="fancy leftpad fadeout" id="design">De&#8226;sign</h1>
+                  <p class="rightpad">I think of design as an artistic language. Through interactions, questions, and research we learn how to better use ‘Design’ to translate between you and your users.</p>
               </div>
           </section>
 
@@ -303,6 +303,23 @@
         gtag('js', new Date());
 
         gtag('config', 'G-JEQHKEELR0');
+      </script>
+
+      <script>
+      var text = ['<span class="fadein">Di&#8226;se&#8226;&#241;o</span>', '<span class="fadein">Ge&#8226;stal&#8226;tung</span>','<span lang="ko" class="kor fadein">디자이</span>','<span class="fadein">De&#8226;sign</span>'];
+      var counter = 0;
+      var elem = document.getElementById("design");
+      var inst = setInterval(change, 7000);
+
+      function change() {
+        elem.innerHTML = text[counter];
+        counter++;
+        if (counter >= text.length) {
+          counter = 0;
+          // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
+        }
+      }
+
       </script>
 
       <!-- REACT SCRIPT - changed for now -->
