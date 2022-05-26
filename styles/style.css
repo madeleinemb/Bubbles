@@ -171,6 +171,10 @@ em {
 	line-height: 1.6;
 }
 
+#design {
+	font-size: 90px;
+}
+
 .fancy {
 	font-family: 'Abril Fatface', cursive;
 	font-size: 54px;
@@ -3468,7 +3472,7 @@ form select {
 
 																					.home .hero_text {
 																						padding-top: 100px;
-																						max-width: 1100px;
+																						max-width: 900px;
 																					}
 
 																					.home .hero {
@@ -3477,12 +3481,17 @@ form select {
 																						background-position-y: -50px;
 																					}
 
+																					.fancy.leftpad {
+																						overflow: visible;
+																						white-space: nowrap;
+																					}
+
 																					.leftpad {
 																						padding: 0px 0px;
 																					}
 
 																					.rightpad {
-																						padding: 0px 0px 0px 23%;
+																						padding: 0px 0px 0px 17%;
 																						max-width: 750px;
 																					}
 
