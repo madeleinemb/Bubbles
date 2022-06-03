@@ -3,3 +3,4 @@ trash
 package-lock.json
 .atom-live-server.json
 assets/.DS_Store
+.DS_Store
