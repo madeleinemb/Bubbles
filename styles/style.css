@@ -2047,6 +2047,10 @@ form select {
 					display: flex;
 				}
 
+				.desktop-only .caption {
+					padding-left: 10px;
+				}
+
 				.case_studies {
 					display: flex;
 					flex-direction: column;
