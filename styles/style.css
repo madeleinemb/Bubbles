@@ -172,6 +172,7 @@ em {
 	font-family: 'Sen', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
+	overflow: hidden;
 }
 
 /*home page hero text */
@@ -411,7 +412,7 @@ strong {
 	position: sticky;
 	top: 0;
 	z-index: 100;
-	width: 100%;
+	width: 100vw;
 	/* height: 80px; */
 	background: linear-gradient(90.01deg, #14EBE3 6.71%, #5BDCFF 44.37%, #f9b6f8 89.76%);
 	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.35);
@@ -1941,22 +1942,24 @@ form select {
 				}
 
 				.navigation {
-					width: 100vw;
+					width: calc(100vw - 80px);
 					height: 45px;
 					padding: 10px 40px;
 					align-content: center;
 					display: flex;
 					background: linear-gradient(90.01deg, #14EBE3 6.71%, #5BDCFF 44.37%, #f9b6f8 89.76%);
 					box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+					overflow: hidden;
 				}
 
 				.nav {
 					flex-basis: 60%;
-					display: block;
+					display: flex;
 					padding: 0px;
 					position: relative;
 					z-index: 0;
 					justify-content: center;
+					align-content: flex-start;
 					width: auto;
 					height: auto;
 					box-shadow: none;
@@ -1966,7 +1969,7 @@ form select {
 
 
 				.name {
-					flex-basis: 80%
+					/* flex-basis: 80% */
 				}
 
 				.web_title {
