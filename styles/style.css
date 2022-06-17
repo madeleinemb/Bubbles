@@ -8,7 +8,7 @@ html {
 
 *,
 *:before,
-*:after {
+*:after ©{
 	box-sizing: inherit;
 }
 
@@ -3589,7 +3589,7 @@ form select {
 																					}
 
 																					.timeline:before {
-																				    margin-left: 32.9%;
+																				    margin-left: calc(33.1% + 4px);
 																				    height: 98.9%;
 																					}
 
