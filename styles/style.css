@@ -2649,6 +2649,7 @@ form select {
 						}
 
 						.white_column {
+							max-width: calc(44vw - 8%);
 							padding: 20px 5% 48px 5%;
 						}
 
