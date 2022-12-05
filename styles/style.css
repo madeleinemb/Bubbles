@@ -1804,6 +1804,10 @@ form select {
 		max-height: 70vw;
 	}
 
+	#Gaming_pic {
+		max-height: 70vw;
+	}
+
 	#celebration {
 		margin-top: -100px;
 	}
@@ -2607,7 +2611,8 @@ form select {
 						}
 
 						#Deskspace_pic,
-						#HydroApps_pic {
+						#HydroApps_pic,
+						#Gaming_pic {
 							min-height: 310px;
 						}
 
@@ -3566,7 +3571,8 @@ form select {
 																					}
 
 																					#HydroApps_pic,
-																					#Deskspace_pic {
+																					#Deskspace_pic,
+																					#Gaming_pic {
 																						min-height: 370px;
 																						max-height: 410px;
 																					}
