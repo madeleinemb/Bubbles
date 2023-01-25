@@ -160,6 +160,11 @@ em {
 	font-size: 16px;
 }
 
+.nobold {
+	font-weight:400;
+	font-size: 22px;
+}
+
 /* nav lefthand name styling */
 .title_caption {
 	color: #313131;
